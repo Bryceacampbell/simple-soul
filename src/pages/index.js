@@ -5,6 +5,7 @@ import Home from '../components/Home/Home';
 import HomeBanner from '../components/HomeBanner/HomeBanner'
 import Process from '../components/Process/Process';
 import Testimonial from '../components/Testimonial/Testimonial';
+import Gallery from '../components/Gallery/Gallery';
 
 const index = () => {
 
@@ -14,6 +15,7 @@ const index = () => {
             <HomeBanner />
             <Process />
             <Testimonial />
+            <Gallery />
         </Layout>
     )
 };
