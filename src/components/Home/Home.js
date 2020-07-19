@@ -39,7 +39,6 @@ const Home = () => {
                         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
                         non proident, sunt in culpa qui officia.
                 </Typography>
-                    <Button className={classes.button} size='large' endIcon={<Info />} >Learn More</Button>
                 </Grid>
                 <Grid item xs={12} md={6}>
                     <ImageCard />
