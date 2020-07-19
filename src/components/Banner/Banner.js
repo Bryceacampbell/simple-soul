@@ -24,38 +24,7 @@ const Banner = ({children}) => {
 
         <Grid item xs={12}>
           <div className={classes.root}>
-<<<<<<< HEAD
            {children}
-=======
-            <Container>
-              <Grid container alignItems="center">
-                <Grid item xs={12}>
-                  <Box mt={3}>
-                    <Typography
-                      style={{ color: "white" }}
-                      align="center"
-                      variant="h5"
-                    >
-                      Want to learn more?
-                    </Typography>
-                    <Typography
-                      style={{ color: "white" }}
-                      align="center"
-                      variant="h5"
-                      gutterBottom
-                    >
-                      Schedule an appointment today!
-                    </Typography>
-                    <Box display="flex" justifyContent="center">
-                      <Button style={{color: 'white', borderColor: '#ccc'}} variant="outlined">
-                        Schedule Appointment
-                      </Button>
-                    </Box>
-                  </Box>
-                </Grid>
-              </Grid>
-            </Container>
->>>>>>> 6fca973a9ab7d52b7bc7e2b49099b8610c7ae4d5
           </div>
         </Grid>
         <Grid item xs={12}>
