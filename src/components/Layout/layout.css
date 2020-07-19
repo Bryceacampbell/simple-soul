@@ -1,3 +1,7 @@
 body {
     margin: 0px !important
 }
+
+:root {
+    --simple-blue: #00707C
+}
