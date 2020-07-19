@@ -1,26 +1,20 @@
 import React from 'react';
 import { Grid, Typography, Button, Container } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import { Info } from '@material-ui/icons';
-import ImageCard from './components/ImageCard';
+import Steps from './components/Steps';
+import piechart from '../../images/piechart.jpg'
 
 const useStyles = makeStyles((theme) => ({
     root: {
         padding: 20
-    },
-    button: {
-        background: '#00707C',
-        color: '#fff',
-        float: 'right',
-        marginRight: 20,
     }
 }));
 
-const Home = () => {
+const Process = () => {
     const classes = useStyles();
 
     return (
-        <Container style={{marginBottom: 40}}>
+        <Container style={{ marginBottom: 40 }}>
             <Grid container spacing={6} className={classes.root}>
                 <Grid item xs={12} md={6}>
                     <br></br>
@@ -29,8 +23,7 @@ const Home = () => {
                         gutterBottom
                         style={{
                             color: '#00707C',
-                           
-                        }}>Simple Soul</Typography>
+                        }}>Our Process</Typography>
                     <Typography variant='h6' gutterBottom>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -39,14 +32,21 @@ const Home = () => {
                         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
                         non proident, sunt in culpa qui officia.
                 </Typography>
-                    <Button className={classes.button} size='large' endIcon={<Info />} >Learn More</Button>
                 </Grid>
-                <Grid item xs={12} md={6}>
-                    <ImageCard />
+                <Grid item xs={12} md={6} style={{display: 'flex', justifyContent: 'center'}}>
+                    <div>
+                        <img
+                            src={piechart}
+                            alt='Epigenetic Indicators Chart'
+                            width='350'
+                        />
+                    </div>
                 </Grid>
             </Grid>
+            <Steps />
+           
         </Container>
     )
 };
 
-export default Home;
+export default Process;
