@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid} from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import TopSVG from "./components/TopSVG/TopSVG";
 import BottomSVG from "./components/BottomSVG/BottomSVG";
@@ -9,23 +9,24 @@ const useStyles = makeStyles((theme) => ({
     height: 150,
     width: "100%",
     background: "var(--simple-blue)",
-  }
+    justifyContent: 'center'
+  },
 }));
 
-const Banner = ({children}) => {
+const Banner = ({ children }) => {
   const classes = useStyles();
 
   return (
     <>
       <Grid container spacing={0}>
         <Grid direction="column" alignItems="flex-end" container>
-        <TopSVG />
+          <TopSVG />
         </Grid>
 
         <Grid item xs={12}>
-          <div className={classes.root}>
-           {children}
-          </div>
+          <Grid className={classes.root} container alignItems="center" justify="center" >
+            {children}
+          </Grid>
         </Grid>
         <Grid item xs={12}>
           <BottomSVG />
