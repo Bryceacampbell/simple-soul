@@ -7,7 +7,7 @@ const Hero = () => {
 
     return (
         <div>
-            <Grid container>
+            <Grid container style={{marginBottom: 40}}>
                 <Grid item xs={12}>
                     <img src={heroImg} alt='Simple Soul' width='100%'/>
                 </Grid>

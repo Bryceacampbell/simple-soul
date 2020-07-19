@@ -10,9 +10,9 @@ const Layout = ({ children }) => {
         <>
         <Header />
         <Hero />
-            <Container>
+            <div>
                 {children}
-            </Container>
+            </div>
         </>
     )
 };
