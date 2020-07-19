@@ -37,14 +37,14 @@ const Home = () => {
                     <Typography
                       style={{ color: "white" }}
                       align="center"
-                      variant="h6"
+                      variant="h5"
                     >
                       Want to learn more?
                     </Typography>
                     <Typography
                       style={{ color: "white" }}
                       align="center"
-                      variant="h6"
+                      variant="h5"
                       gutterBottom
                     >
                       Schedule an appointment today!

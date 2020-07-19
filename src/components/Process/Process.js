@@ -1,21 +1,13 @@
 import React from 'react';
 import { Grid, Typography, Button, Container } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-// import PieChart from './components/PieChart';
+import Steps from './components/Steps';
 import piechart from '../../images/piechart.jpg'
+
 const useStyles = makeStyles((theme) => ({
     root: {
         padding: 20
-    },
-    roundedDiv: {
-        borderRadius: '50%',
-        background: '#00707C',
-        width: 125,
-        height: 125,
-        marginRight: 'auto',
-        marginLeft: 'auto',
-        marginBottom: 10
-    },
+    }
 }));
 
 const Process = () => {
@@ -31,8 +23,6 @@ const Process = () => {
                         gutterBottom
                         style={{
                             color: '#00707C',
-                            borderBottom: '1px solid #00707C',
-                            maxWidth: '40%'
                         }}>Our Process</Typography>
                     <Typography variant='h6' gutterBottom>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -53,29 +43,8 @@ const Process = () => {
                     </div>
                 </Grid>
             </Grid>
-            <Grid container spacing={6} direction='row' style={{ textAlign: 'center' }}>
-                <Grid item xs  >
-                    <div className={classes.roundedDiv} ></div>
-                    <Typography variant='h5'>Analyze</Typography>
-                </Grid>
-                <Grid item xs >
-                    <div className={classes.roundedDiv}></div>
-                    <Typography variant='h5'>Collect</Typography>
-                </Grid>
-                <Grid item xs >
-                    <div className={classes.roundedDiv}></div>
-                    <Typography variant='h5'>Optimize Wellness</Typography>
-                </Grid>
-                <Grid item xs >
-                    <div className={classes.roundedDiv}></div>
-                    <Typography variant='h5'>Results</Typography>
-                </Grid>
-                <Grid item xs >
-                    <div className={classes.roundedDiv}></div>
-                    <Typography variant='h5'>90 day review</Typography>
-                </Grid>
-
-            </Grid>
+            <Steps />
+           
         </Container>
     )
 };

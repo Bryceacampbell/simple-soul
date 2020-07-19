@@ -29,8 +29,7 @@ const Home = () => {
                         gutterBottom
                         style={{
                             color: '#00707C',
-                            borderBottom: '1px solid #00707C',
-                            maxWidth: '40%'
+                           
                         }}>Simple Soul</Typography>
                     <Typography variant='h6' gutterBottom>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -40,7 +39,7 @@ const Home = () => {
                         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
                         non proident, sunt in culpa qui officia.
                 </Typography>
-                    <Button className={classes.button} size='large' startIcon={<Info />} >Learn More</Button>
+                    <Button className={classes.button} size='large' endIcon={<Info />} >Learn More</Button>
                 </Grid>
                 <Grid item xs={12} md={6}>
                     <ImageCard />
