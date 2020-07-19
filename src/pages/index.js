@@ -11,13 +11,9 @@ const index = () => {
     return(
         <Layout>
             <Home />
-<<<<<<< HEAD
-            <Banner />
+            <HomeBanner />
             <Process />
             <Testimonial />
-=======
-            <HomeBanner />
->>>>>>> c7c706f07da4d84f7abb3bdc31a311fbcf0af5f5
         </Layout>
     )
 };
