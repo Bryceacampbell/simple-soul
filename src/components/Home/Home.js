@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
         background: '#00707C',
         color: '#fff',
         float: 'right',
-        marginRight: 20
+        marginRight: 20,
     }
 }));
 
@@ -23,7 +23,7 @@ const Home = () => {
         <Grid container spacing={6} className={classes.root}>
             <Grid item xs={12} md={6}>
                 <br></br>
-                <Typography variant='h4' gutterBottom>Simple Soul</Typography>
+                <Typography variant='h4' gutterBottom style={{color: '#00707C', borderBottom: '1px solid #00707C', maxWidth: '40%'}}>Simple Soul</Typography>
                 <Typography variant='h6' gutterBottom>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
