@@ -14,30 +14,24 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
+const steps = [
+    { id: 1, name: 'Collect' },
+    { id: 2, name: 'Analyze' },
+    { id: 3, name: 'Optimize Wellness' },
+    { id: 4, name: 'Results' },
+    { id: 5, name: '90 Day Review' },
+];
+
 const Steps = () => {
     const classes = useStyles();
     return (
         <Grid container spacing={6} direction='row' style={{ textAlign: 'center' }}>
-            <Grid item xs  >
-                <div className={classes.roundedDiv} ></div>
-                <Typography variant='h5'>Analyze</Typography>
-            </Grid>
-            <Grid item xs >
-                <div className={classes.roundedDiv}></div>
-                <Typography variant='h5'>Collect</Typography>
-            </Grid>
-            <Grid item xs >
-                <div className={classes.roundedDiv}></div>
-                <Typography variant='h5'>Optimize Wellness</Typography>
-            </Grid>
-            <Grid item xs >
-                <div className={classes.roundedDiv}></div>
-                <Typography variant='h5'>Results</Typography>
-            </Grid>
-            <Grid item xs >
-                <div className={classes.roundedDiv}></div>
-                <Typography variant='h5'>90 day review</Typography>
-            </Grid>
+            {steps.map((step => (
+                <Grid item xs={4} md key={step.id}>
+                    <div className={classes.roundedDiv} ></div>
+                    <Typography variant='h5'>{step.name}</Typography>
+                </Grid>
+            )))}
         </Grid>
     )
 };
