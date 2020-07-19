@@ -10,8 +10,8 @@ const useStyles = makeStyles((theme) => ({
     roundedDiv: {
         borderRadius: '50%',
         background: '#00707C',
-        width: 150,
-        height: 150,
+        width: 125,
+        height: 125,
         marginRight: 'auto',
         marginLeft: 'auto',
         marginBottom: 10
