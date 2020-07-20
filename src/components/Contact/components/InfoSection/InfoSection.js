@@ -4,7 +4,7 @@ import {Grid} from '@material-ui/core'
 
 const InfoSection = () => {
   return (
-    <Grid spacing={5} container>
+    <Grid spacing={5} style={{marginTop: '.5em'}} container justify='center'>
       <Grid item><InfoCard /></Grid>
       <Grid item><InfoCard /></Grid>
     </Grid>

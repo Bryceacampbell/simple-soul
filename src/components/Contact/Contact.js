@@ -5,7 +5,7 @@ import InfoSection from "./components/InfoSection/InfoSection";
 const Contact = () => {
   return (
     <Container>
-      <Grid container>
+      <Grid style={{padding: '20px'}} container spacing={2}>
         <Grid item sm={6}>
           <Typography
             style={{

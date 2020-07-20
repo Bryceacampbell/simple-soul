@@ -15,10 +15,11 @@ const InfoCard = () => {
     root: {
       display: "flex",
       flexDirection: "row",
+      width: '25rem'
     },
     content: {
       flexGrow: 1,
-      padding: "1em",
+      padding: ".75em",
       display: "flex",
       flexDirection: "column",
       justifyContent: "center",
@@ -29,18 +30,18 @@ const InfoCard = () => {
     },
     media: {
       backgroundSize: 'contain',
-      margin: '1em'
+      margin: '.5em'
     }
   });
   const classes = useStyles();
   return (
-    <Card className={classes.root}>
+    <Card raised className={classes.root}>
       <CardMedia className={classes.media}
         style={{ height: "170px", width: "125px" }}
         image={`https://www.klipfolio.com/sites/default/files/blog/calendly-logo.png`}
       ></CardMedia>
       <CardContent className={classes.content}>
-        <Typography gutterBottom variant="h4">Book today!</Typography>
+        <Typography gutterBottom variant="h5">Book today!</Typography>
         <Typography gutterBottom variant="body1">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, quae?
         </Typography>
