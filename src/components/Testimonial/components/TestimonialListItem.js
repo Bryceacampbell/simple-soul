@@ -8,7 +8,7 @@ const ListItem = ({ name, review }) => {
         <>
             <FormatQuoteIcon style={{ fontSize: 40 }} />
             <Typography variant='h5'>{name}</Typography>
-            <Typography variant='h6'>{review}</Typography>
+            <Typography variant='body2'>{review}</Typography>
         </>
     )
 };

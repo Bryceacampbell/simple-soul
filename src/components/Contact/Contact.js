@@ -13,15 +13,7 @@ const Contact = () => {
             }}
             variant="h4"
           >
-            Contact us
-          </Typography>
-          <Typography
-            style={{
-              color: "#00707C",
-            }}
-            variant="h4"
-          >
-            today!
+            Get in touch.
           </Typography>
           <ContactForm />
         </Grid>
