@@ -5,13 +5,14 @@ import Hair from "../../SvgIcons/Hair/Hair";
 import NinetyDay from "../../SvgIcons/NinetyDay/NinetyDay";
 import PieChartIcon from "@material-ui/icons/PieChart";
 import AssignmentIcon from "@material-ui/icons/Assignment";
-import ScanIcon from '../../SvgIcons/Scan/Scan'
+import ScanIcon from '../../SvgIcons/Scan/Scan';
+
 const useStyles = makeStyles((theme) => ({
   roundedDiv: {
     borderRadius: "50%",
     background: "#00707C",
-    width: 125,
-    height: 125,
+    width: '6em',
+    height: '6em',
     marginRight: "auto",
     marginLeft: "auto",
     marginBottom: 10,
@@ -43,7 +44,7 @@ const Steps = () => {
     },
   ];
   return (
-    <Grid container spacing={6} direction="row" style={{ textAlign: "center" }}>
+    <Grid container spacing={4} direction="row" style={{ textAlign: "center" }}>
       {steps.map((step) => (
         <Grid item xs={6} md key={step.id}>
           <div className={classes.roundedDiv}>{step.icon}</div>
