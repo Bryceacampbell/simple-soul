@@ -6,7 +6,8 @@ import piechart from '../../images/piechart.jpg'
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        padding: 20
+        padding: 20,
+        marginBottom: 40
     }
 }));
 
@@ -14,7 +15,7 @@ const Process = () => {
     const classes = useStyles();
 
     return (
-        <Container style={{ marginBottom: 40 }}>
+        <Container style={{ marginBottom: 80 }}>
             <Grid container spacing={4} className={classes.root}>
                 <Grid item xs={12} md={6}>
                     <br></br>

@@ -14,7 +14,7 @@ const Gallery = () => {
     const classes = useStyles();
 
     return (
-        <Container style={{ marginBottom: 40 }}>
+        <Container style={{ marginBottom: 80 }}>
             <Grid container spacing={2} className={classes.root}>
                 <Grid item xs={2}>
                     <Button variant='text' startIcon={<InstagramIcon/>} size='large'> @simplesoulaz</Button>

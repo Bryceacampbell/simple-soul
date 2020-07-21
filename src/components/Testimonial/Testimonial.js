@@ -13,7 +13,7 @@ const Process = () => {
     const classes = useStyles();
 
     return (
-        <Container style={{ marginBottom: 40 }}>
+        <Container style={{ marginBottom: 80 }}>
             <Grid container spacing={2} className={classes.root}>
                 <Grid item xs={12} md={6}>
                     <Typography
