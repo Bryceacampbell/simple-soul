@@ -20,6 +20,7 @@ const Process = () => {
                 <Grid item xs={12} md={6}>
                     <br></br>
                     <Typography
+                   
                         variant='h4'
                         gutterBottom
                         style={{

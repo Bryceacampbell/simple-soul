@@ -1,7 +1,9 @@
 body {
-    margin: 0px !important
+    margin: 0px !important;
+    font-family: 'Montserrat'
 }
 
 :root {
     --simple-blue: #00707C
 }
+
