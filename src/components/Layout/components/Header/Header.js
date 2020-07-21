@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-
+import React from "react";
+import {Link} from 'gatsby'
 import {
   Grid,
   Toolbar,
@@ -57,11 +57,11 @@ const Header = () => {
         <Grid container>
           <Grid item xs>
             <Box height="100%" display="flex">
-              <a className={classes.mainLink} href="#home">
+              <Link className={classes.mainLink} to="#home">
                 <Typography style={{ alignSelf: "center" }} variant="h6">
                   Simple Soul
                 </Typography>
-              </a>
+              </Link>
             </Box>
           </Grid>
           <Hidden only="xs">

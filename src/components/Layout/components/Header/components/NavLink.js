@@ -1,5 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import {Link} from 'gatsby'
 
 const NavLink = ({ link, children, color, main }) => {
   const useStyles = makeStyles({
@@ -12,9 +13,9 @@ const NavLink = ({ link, children, color, main }) => {
   });
   const classes = useStyles();
   return (
-    <a className={classes.link} href={link}>
+    <Link className={classes.link} to={link}>
       {children}
-    </a>
+    </Link>
   );
 };
 
