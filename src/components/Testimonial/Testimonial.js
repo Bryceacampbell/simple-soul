@@ -28,9 +28,9 @@ const Process = () => {
                             color: '#00707C',
                         }}>Simple Soul</Typography>
                 </Grid>
-                <Grid item xs={12}>
+                
                     <TestimonialList />
-                </Grid>
+                
             </Grid>
         </Container>
     )

@@ -45,7 +45,7 @@ const Steps = () => {
   return (
     <Grid container spacing={6} direction="row" style={{ textAlign: "center" }}>
       {steps.map((step) => (
-        <Grid item xs={4} md key={step.id}>
+        <Grid item xs={6} md key={step.id}>
           <div className={classes.roundedDiv}>{step.icon}</div>
           <Typography variant="h5">{step.name}</Typography>
         </Grid>

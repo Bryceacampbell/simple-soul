@@ -19,9 +19,9 @@ const Gallery = () => {
                 <Grid item xs={2}>
                     <Button variant='text' startIcon={<InstagramIcon/>} size='large'> @simplesoulaz</Button>
                 </Grid>
-                <Grid item xs={12}>
+                
                     <GalleryList />
-                </Grid>
+                
             </Grid>
         </Container>
     )

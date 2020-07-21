@@ -9,7 +9,7 @@ const Contact = () => {
         <Grid item sm={6}>
           <Typography
             style={{
-              color: "#00707C",
+              color: "#00707C"
             }}
             variant="h4"
           >

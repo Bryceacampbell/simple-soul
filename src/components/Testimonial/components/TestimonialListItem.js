@@ -1,15 +1,44 @@
 import React from 'react';
-import { Typography } from '@material-ui/core';
+import { Typography, Card, CardMedia, CardContent, Grid } from '@material-ui/core';
 import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
+import { makeStyles } from '@material-ui/core/styles';
 
-const ListItem = ({ name, review }) => {
+const useStyles = makeStyles((theme) => ({
+    root: {
+        maxWidth: '100%',
+        borderRadius: 10
+    },
+    icon: {
+        color: "var(--simple-blue)",
+        fontSize: 40
+    },
+    media: {
+        height: 400,
+    },
+}));
+
+const ListItem = ({ name, review, imgUrl }) => {
+    const classes = useStyles();
 
     return (
-        <>
-            <FormatQuoteIcon style={{ fontSize: 40 }} />
-            <Typography variant='h5'>{name}</Typography>
-            <Typography variant='body2'>{review}</Typography>
-        </>
+
+        <Card className={classes.root} raised={true}>
+            <Grid container>
+                <Grid item xs={12} md={4}>
+                <CardMedia
+                className={classes.media}
+                image={imgUrl}
+            />
+                </Grid>
+                <Grid item xs={12} md style={{padding: '10px 20px 10px 20px'}}>
+                    <div style={{ display: 'inline-flex' }}>
+                        <FormatQuoteIcon className={classes.icon}/>
+                        <Typography variant='h5' style={{ marginTop: 10 }}>{name}</Typography>
+                    </div>
+                    <Typography variant='body1'>{review}</Typography>
+                </Grid>
+            </Grid>
+        </Card>
     )
 };
 
