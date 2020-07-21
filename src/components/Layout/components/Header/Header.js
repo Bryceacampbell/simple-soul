@@ -36,6 +36,7 @@ const Header = () => {
   const classes = useStyles();
 
   const links = [
+    { text: "About", link: "#home" },
     { text: "Our Process", link: "#process" },
     { text: "Testimonials", link: "#testimonials" },
     { text: "Contact", link: "#contact" },
@@ -58,7 +59,7 @@ const Header = () => {
           <Grid item xs>
             <Box height="100%" display="flex">
               <Link className={classes.mainLink} to="#home">
-                <Typography style={{ alignSelf: "center" }} variant="h6">
+                <Typography style={{ alignSelf: "center" }} variant="h5">
                   Simple Soul
                 </Typography>
               </Link>

@@ -4,12 +4,13 @@ import ContactForm from "./components/ContactForm/ContactForm";
 import InfoSection from "./components/InfoSection/InfoSection";
 const Contact = () => {
   return (
-    <Container>
-      <Grid style={{padding: '20px'}} container spacing={2}>
+    <Container style={{ marginBottom: 80 }}>
+      <Grid style={{ padding: '20px' }} container spacing={2}>
         <Grid item sm={6}>
           <Typography
             style={{
-              color: "#00707C"
+              color: "#00707C",
+              marginBottom: 20
             }}
             variant="h4"
           >

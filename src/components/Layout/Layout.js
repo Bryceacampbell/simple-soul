@@ -2,19 +2,27 @@ import React from "react"
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer'
 import Hero from './components/Hero';
+import { createMuiTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles';
 import "./layout.css";
-import { Container } from "@material-ui/core";
+
+const theme = createMuiTheme({
+    typography: {
+        fontFamily: [
+            'Montserrat', 'sans-serif'
+        ].join(','),
+    },
+});
 
 const Layout = ({ children }) => {
     return (
-        <>
-        <Header />
-        <Hero />
-            <div>
-                {children}
-            </div>
+        <ThemeProvider theme={theme}>
+            <Header />
+            <Hero />
+
+            {children}
+
             <Footer />
-        </>
+        </ThemeProvider>
     )
 };
 
