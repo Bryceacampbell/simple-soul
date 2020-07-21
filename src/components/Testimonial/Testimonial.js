@@ -1,9 +1,9 @@
 import React from "react";
-import { Grid, Typography, Button, Container } from "@material-ui/core";
+import { Grid, Typography, Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import TestimonialList from "./components/TestimonialList";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     padding: 20,
   },

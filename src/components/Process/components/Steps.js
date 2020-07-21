@@ -7,7 +7,7 @@ import PieChartIcon from "@material-ui/icons/PieChart";
 import AssignmentIcon from "@material-ui/icons/Assignment";
 import ScanIcon from '../../SvgIcons/Scan/Scan';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   roundedDiv: {
     borderRadius: "50%",
     background: "#00707C",

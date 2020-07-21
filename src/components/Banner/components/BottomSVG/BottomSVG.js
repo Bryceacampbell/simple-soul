@@ -1,5 +1,4 @@
 import React from "react";
-import { Grid, Container, Typography, Button, Box } from "@material-ui/core";
 const BottomSVG = () => {
   return (
     <svg viewBox="0 0 1364 65.27">
