@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Grid, Typography } from "@material-ui/core";
+import { Container, Grid } from "@material-ui/core";
 import Favicon from "../../../../images/icons/favicon.png";
 const Footer = () => {
   return (

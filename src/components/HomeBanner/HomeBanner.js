@@ -1,7 +1,6 @@
 import React from "react";
 import Banner from "../Banner/Banner";
 import { Grid, Container, Typography, Button, Box } from "@material-ui/core";
-import HairIcon from "../SvgIcons/Hair/Hair";
 const HomeBanner = () => {
   return (
     <Banner>

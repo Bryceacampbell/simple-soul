@@ -1,9 +1,9 @@
 import React from 'react';
-import { Typography, Card, CardMedia, CardContent, Grid } from '@material-ui/core';
+import { Typography, Card, CardMedia, Grid } from '@material-ui/core';
 import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
 import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
     root: {
         maxWidth: '100%',
         borderRadius: 10

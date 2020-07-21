@@ -4,7 +4,7 @@ import { Card, CardMedia } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import image from '../../../images/card-img.jpeg';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
     root: {
         maxWidth: '100%',
         borderRadius: 10
