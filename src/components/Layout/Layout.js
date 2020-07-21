@@ -1,6 +1,6 @@
 import React from "react"
 
-import Header from './components/Header';
+import Header from './components/Header/Header';
 import Hero from './components/Hero';
 import "./layout.css";
 import { Container } from "@material-ui/core";
