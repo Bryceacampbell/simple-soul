@@ -10,32 +10,31 @@ const ContactForm = () => {
   });
   const classes = useStyles;
   return (
-    <form name="contact-form">
-      <Grid item>
-        <Box display="inline-flex" flexDirection="column">
+    <Grid item>
+      <form name="contact-form">
           <TextField
-            style={{ width: "400px", marginBottom: '1.5em' }}
+            style={{ width: "80%", marginBottom: '1.5em' }}
             size="medium"
             name="Name"
             label="Name"
           ></TextField>
           <TextField
           
-            style={{ width: "400px", marginBottom: '1.5em' }}
+            style={{ width: "80%", marginBottom: '1.5em' }}
             size="medium"
             name="Phone"
             label="Phone"
           ></TextField>
           <TextField
           
-            style={{ width: "400px", marginBottom: '1.5em' }}
+            style={{ width: "80%", marginBottom: '1.5em' }}
             size="medium"
             name="Message"
             label="Message..."
             multiline
             rows={6}
           ></TextField>
-          <div>
+          <div style={{width: "80%"}}>
             <Button
               style={{
                 float: "right",
@@ -46,9 +45,8 @@ const ContactForm = () => {
               Send
             </Button>
           </div>
-        </Box>
-      </Grid>
     </form>
+      </Grid>
   );
 };
 

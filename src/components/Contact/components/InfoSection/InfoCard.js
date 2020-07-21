@@ -15,7 +15,6 @@ const InfoCard = () => {
     root: {
       display: "flex",
       flexDirection: "row",
-      width: '25rem'
     },
     content: {
       flexGrow: 1,
