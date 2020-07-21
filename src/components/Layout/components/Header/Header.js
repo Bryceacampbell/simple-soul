@@ -52,7 +52,7 @@ const Header = () => {
   };
 
   return (
-    <AppBar style={{ backgroundColor: "var(--simple-blue)" }}>
+    <AppBar position='sticky' style={{ backgroundColor: "var(--simple-blue)" }}>
       <Toolbar>
         <Grid container>
           <Grid item xs>
