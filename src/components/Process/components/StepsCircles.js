@@ -8,8 +8,8 @@ const useStyles = makeStyles(() => ({
   roundedDiv: {
     borderRadius: "50%",
     background: "#00707C",
-    width: "6em",
-    height: "6em",
+    width: "5em",
+    height: "5em",
     marginRight: "auto",
     marginLeft: "auto",
     marginBottom: 10,
