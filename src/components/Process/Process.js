@@ -43,7 +43,7 @@ const Process = () => {
   return (
     <Container style={{ marginBottom: 80 }}>
       <Grid container spacing={4} className={classes.root}>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} sm={6}>
           <br></br>
           <Typography
             variant="h4"

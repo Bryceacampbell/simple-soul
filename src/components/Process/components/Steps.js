@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Typography } from "@material-ui/core";
+import { Grid, Hidden } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Hair from "../../SvgIcons/Hair/Hair";
 import NinetyDay from "../../SvgIcons/NinetyDay/NinetyDay";
@@ -7,8 +7,8 @@ import PieChartIcon from "@material-ui/icons/PieChart";
 import AssignmentIcon from "@material-ui/icons/Assignment";
 import ScanIcon from "../../SvgIcons/Scan/Scan";
 import { AnimatePresence } from "framer-motion";
-import Step from "./StepsCircles";
-
+import Step from "./AnimatedStepsCircles";
+import MobileSteps from "./StepCircles";
 const useStyles = makeStyles(() => ({
   iconFont: {
     fontSize: "3.5em",
@@ -38,30 +38,42 @@ const Steps = ({ inView }) => {
     },
   ];
   return (
-    <AnimatePresence>
-      {inView && (
-        <Grid
-          container
-          spacing={4}
-          direction="row"
-          style={{ textAlign: "center" }}
-        >
-          {steps.map((step, i) => {
-            return (
-              <Grid item xs={12} md={6} md key={step.name}>
-                {
-                  <Step
-                    name={step.name}
-                    icon={step.icon}
-                    animationDuration={i * 0.3}
-                  />
-                }
-              </Grid>
-            );
-          })}
+    <>
+      <Hidden smDown>
+        <AnimatePresence>
+          {inView && (
+            <Grid
+              container
+              spacing={2}
+              direction="row"
+              justify="space-around"
+              style={{ textAlign: "center" }}
+            >
+              {steps.map((step, i) => {
+                return (
+                  <Grid item xs>
+                    <Step
+                      name={step.name}
+                      icon={step.icon}
+                      animationDuration={i * 0.3}
+                    />
+                  </Grid>
+                );
+              })}
+            </Grid>
+          )}
+        </AnimatePresence>
+      </Hidden>
+      <Hidden mdUp>
+        <Grid container direction="row" justify="space-around">
+          {steps.map((step, i) => (
+            <Grid item xs>
+              <MobileSteps icon={step.icon} name={step.name} />
+            </Grid>
+          ))}
         </Grid>
-      )}
-    </AnimatePresence>
+      </Hidden>
+    </>
   );
 };
 

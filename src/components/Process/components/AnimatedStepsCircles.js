@@ -1,5 +1,4 @@
 import React from "react";
-import { Typography } from "@material-ui/core";
 import { motion, useAnimation } from "framer-motion";
 import useInView from "react-cool-inview";
 import { makeStyles } from "@material-ui/core/styles";
@@ -8,18 +7,18 @@ const useStyles = makeStyles(() => ({
   roundedDiv: {
     borderRadius: "50%",
     background: "#00707C",
-    width: "5em",
-    height: "5em",
+    width: "6rem",
+    height: "6rem",
     marginRight: "auto",
     marginLeft: "auto",
     marginBottom: 10,
     alignItems: "center",
     display: "flex",
     justifyContent: "center",
-  }
+  },
 }));
 const StepsCircles = ({ icon, name, animationDuration }) => {
-  console.log(animationDuration)
+  console.log(animationDuration);
   const classes = useStyles();
 
   const controls = useAnimation();
@@ -31,7 +30,7 @@ const StepsCircles = ({ icon, name, animationDuration }) => {
   const { ref } = useInView({
     onEnter: startAnimation,
     unobserveOnEnter: true,
-    threshold: .3
+    threshold: 0.3,
   });
   const stepVariants = {
     open: {
@@ -39,8 +38,8 @@ const StepsCircles = ({ icon, name, animationDuration }) => {
       opacity: 1,
       transition: {
         delay: animationDuration,
-        duration: .5
-      }
+        duration: 0.5,
+      },
     },
     closed: {
       x: -200,
@@ -54,9 +53,20 @@ const StepsCircles = ({ icon, name, animationDuration }) => {
       initial="closed"
       exit="closed"
       animate={controls}
+      style={{ display: "inline-block" }}
     >
       <div className={classes.roundedDiv}>{icon}</div>
-      <Typography variant="h5">{name}</Typography>
+      <h5
+        style={{
+          margin: "0",
+          fontFamily: "Montserrat",
+          fontSize: "1.5em",
+          textAlign: "center",
+          fontWeight: "200",
+        }}
+      >
+        {name}
+      </h5>
     </motion.div>
   );
 };
