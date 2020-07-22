@@ -5,9 +5,7 @@ const HomeBanner = () => {
   return (
     <Banner id="process">
       <Container>
-        <Grid container>
-          <Grid item xs={12}>
-            <Box mt={3}>
+        <Grid display='flex' direction='column' alignItems='center' justify='center' style={{height: '100%'}} container>
               <Typography
                 style={{ color: "white" }}
                 align="center"
@@ -30,9 +28,7 @@ const HomeBanner = () => {
                 >
                   Schedule Appointment
                 </Button>
-              </Box>
             </Box>
-          </Grid>
         </Grid>
       </Container>
     </Banner>
