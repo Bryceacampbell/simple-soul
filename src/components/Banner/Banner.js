@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Banner = ({ children }) => {
+const Banner = ({ children, id }) => {
   const classes = useStyles();
 
   return (
@@ -24,7 +24,7 @@ const Banner = ({ children }) => {
         </Grid>
 
         <Grid item xs={12}>
-          <Grid className={classes.root} container alignItems="center" justify="center" >
+          <Grid id={id} className={classes.root} container alignItems="center" justify="center" >
             {children}
           </Grid>
         </Grid>
