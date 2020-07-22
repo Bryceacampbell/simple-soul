@@ -3,8 +3,7 @@ import Banner from "../Banner/Banner";
 import Wave from "../SvgIcons/Wave/Wave";
 const GalleryBanner = () => {
   return (
-    <Banner>
-      <span id="contact"></span>
+    <Banner id="contact">
       <Wave width="500px" color="#fff" />
     </Banner>
   );

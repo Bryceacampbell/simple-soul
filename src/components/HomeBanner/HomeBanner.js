@@ -3,13 +3,12 @@ import Banner from "../Banner/Banner";
 import { Grid, Container, Typography, Button, Box } from "@material-ui/core";
 const HomeBanner = () => {
   return (
-    <Banner>
+    <Banner id="process">
       <Container>
-        <Grid container alignItems="center">
+        <Grid container>
           <Grid item xs={12}>
             <Box mt={3}>
               <Typography
-                id="process"
                 style={{ color: "white" }}
                 align="center"
                 variant="h6"
