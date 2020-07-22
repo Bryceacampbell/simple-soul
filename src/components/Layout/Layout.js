@@ -2,7 +2,7 @@ import React from "react"
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer'
 import Hero from './components/Hero';
-import { createMuiTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import "./layout.css";
 
 const theme = createMuiTheme({
