@@ -30,7 +30,7 @@ const StepsCircles = ({ icon, name, animationDuration }) => {
   const { ref } = useInView({
     onEnter: startAnimation,
     unobserveOnEnter: true,
-    threshold: 0.3,
+    rootMargin: '0px 0px'
   });
   const stepVariants = {
     open: {
