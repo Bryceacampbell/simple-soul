@@ -3,7 +3,7 @@ import { Grid, Typography, Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Steps from "./components/Steps";
 import piechart from "../../images/piechart.jpg";
-import { motion, useAnimation, AnimatePresence } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import useInView from "react-cool-inview";
 
 const useStyles = makeStyles(() => ({
@@ -72,19 +72,15 @@ const Process = () => {
           style={{ display: "flex", justifyContent: "center" }}
         >
           <div ref={ref}>
-            <AnimatePresence>
-              {inView && (
                 <motion.img
                   variants={imgVariants}
                   initial="closed"
-                  animate="open"
+                  animate={controls}
                   exit="closed"
                   src={piechart}
                   alt="Epigenetic Indicators Chart"
                   width="350"
                 />
-              )}
-            </AnimatePresence>
           </div>
         </Grid>
       </Grid>
