@@ -18,7 +18,6 @@ const useStyles = makeStyles(() => ({
   },
 }));
 const StepsCircles = ({ icon, name, animationDuration }) => {
-  console.log(animationDuration);
   const classes = useStyles();
 
   const controls = useAnimation();

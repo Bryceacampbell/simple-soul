@@ -37,7 +37,7 @@ const ListItem = ({ name, review, imgUrl, direction }) => {
       opacity: 1,
     },
     closed: {
-      x: direction == "left" ? -500 : direction == "right" ? 500 : 0,
+      x: direction === "left" ? -500 : direction === "right" ? 500 : 0,
       opacity: 0,
     },
   };
