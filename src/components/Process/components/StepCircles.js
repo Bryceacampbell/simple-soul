@@ -5,7 +5,7 @@ const StepCircles = ({ icon, name }) => {
   const useStyles = makeStyles(() => ({
     roundedDiv: {
       borderRadius: "50%",
-      background: "#00707C",
+      background: "var(--simple-blue)",
       width: "6rem",
       height: "6rem",
       marginRight: "auto",
