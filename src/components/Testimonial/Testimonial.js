@@ -19,7 +19,7 @@ const Process = () => {
           <Typography
             variant="h4"
             style={{
-              color: "#00707C",
+              color: "var(--simple-blue)",
             }}
           >
             Customers Love
