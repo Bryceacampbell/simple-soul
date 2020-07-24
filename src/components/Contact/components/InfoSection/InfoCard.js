@@ -5,10 +5,12 @@ import {
   CardContent,
   Typography,
   Button,
+  Grid,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import FamilyIcon from "../../../SvgIcons/Family/FamilyIcon";
 
-const InfoCard = () => {
+const InfoCard = ({icon, text, header}) => {
   const useStyles = makeStyles({
     root: {
       display: "flex",
@@ -23,28 +25,28 @@ const InfoCard = () => {
     },
     btn: {
       float: "right",
-      marginRight: '1em'
+      marginRight: "1em",
     },
     media: {
-      backgroundSize: 'contain',
-      margin: '.5em'
-    }
+      backgroundSize: "contain",
+      margin: ".5em",
+    },
   });
   const classes = useStyles();
   return (
     <Card raised className={classes.root}>
-      <CardMedia className={classes.media}
-        style={{ height: "170px", width: "125px" }}
-        image={`https://www.klipfolio.com/sites/default/files/blog/calendly-logo.png`}
-      ></CardMedia>
+      <CardMedia className={classes.media}>
+        <Grid container style={{height: '100%'}} alignItems="center">
+         {icon}
+        </Grid>
+      </CardMedia>
       <CardContent className={classes.content}>
-        <Typography gutterBottom variant="h5">Book today!</Typography>
-        <Typography gutterBottom variant="body1">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, quae?
+        <Typography gutterBottom variant="h5">
+          {header}
         </Typography>
-        <div>
-          <Button className={classes.btn} variant="outlined">Book Now</Button>
-        </div>
+        <Typography gutterBottom variant="body1">
+          {text}
+        </Typography>
       </CardContent>
     </Card>
   );

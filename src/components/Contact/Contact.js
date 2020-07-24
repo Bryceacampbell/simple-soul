@@ -11,7 +11,7 @@ const Contact = () => {
             <Hidden smUp>
               <Typography
                 style={{
-                  color: "#00707C",
+                  color: "var(--simple-blue)",
                   marginBottom: 20,
                 }}
                 variant="h4"
@@ -23,7 +23,7 @@ const Contact = () => {
           <Hidden only="xs">
             <Typography
               style={{
-                color: "#00707C",
+                color: "var(--simple-blue)",
                 marginBottom: 20,
               }}
               variant="h4"
@@ -34,6 +34,30 @@ const Contact = () => {
           <ContactForm />
         </Grid>
         <Grid item sm={6}>
+          <Grid container justify="center">
+            <Hidden smUp>
+              <Typography
+                style={{
+                  color: "var(--simple-blue)",
+                  marginBottom: 20,
+                }}
+                variant="h4"
+              >
+                Get in touch.
+              </Typography>
+            </Hidden>
+          </Grid>
+          <Hidden only="xs">
+            <Typography
+              style={{
+                color: "var(--simple-blue)",
+                marginBottom: 20,
+              }}
+              variant="h4"
+            >
+              Get in touch.
+            </Typography>
+          </Hidden>
           <InfoSection />
         </Grid>
       </Grid>

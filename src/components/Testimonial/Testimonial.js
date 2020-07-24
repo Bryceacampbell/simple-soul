@@ -28,7 +28,7 @@ const Process = () => {
             variant="h4"
             gutterBottom
             style={{
-              color: "#00707C",
+              color: "var--(simple-blue)",
             }}
           >
             Simple Soul
