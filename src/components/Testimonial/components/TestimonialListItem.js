@@ -33,11 +33,9 @@ const ListItem = ({ name, review, imgUrl, direction }) => {
 
   const cardVariants = {
     open: {
-      x: 0,
       opacity: 1,
     },
     closed: {
-      x: direction === "left" ? -500 : direction === "right" ? 500 : 0,
       opacity: 0,
     },
   };

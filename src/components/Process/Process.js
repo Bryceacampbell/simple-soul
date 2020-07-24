@@ -23,7 +23,7 @@ const Process = () => {
       },
     },
     closed: {
-      x: 300,
+      x: 25,
       opacity: 0,
     },
   };
@@ -37,7 +37,7 @@ const Process = () => {
   const { ref, inView } = useInView({
     onEnter: startAnimation,
     unobserveOnEnter: true,
-    rootMargin: '-200px 0px'
+    rootMargin: '-200px'
   });
 
   const classes = useStyles();

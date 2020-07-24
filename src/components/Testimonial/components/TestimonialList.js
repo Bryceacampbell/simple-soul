@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid } from '@material-ui/core';
+import { Grid, Hidden } from '@material-ui/core';
 import TestimonialListItem from './TestimonialListItem';
 
 const reviews = [
