@@ -16,7 +16,7 @@ const useStyles = makeStyles(() => ({
     fontSize: 40,
   },
   media: {
-    height: 450,
+    height: 475,
   },
 }));
 
