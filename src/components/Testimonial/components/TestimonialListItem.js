@@ -28,7 +28,7 @@ const ListItem = ({ name, review, imgUrl, direction }) => {
     onEnter: () => {
       controls.start("open");
     },
-    rootMargin: '-200px 0px'
+    rootMargin: '0px 250px'
   });
 
   const cardVariants = {
