@@ -9,17 +9,18 @@ const useStyles = makeStyles(() => ({
   root: {
     maxWidth: "100%",
     borderRadius: 10,
+    
   },
   icon: {
     color: "var(--simple-blue)",
     fontSize: 40,
   },
   media: {
-    height: 400,
+    height: 450,
   },
 }));
 
-const ListItem = ({ name, review, imgUrl, direction }) => {
+const ListItem = ({ name, review, imgUrl, direction, secondReview, secondName }) => {
   const classes = useStyles();
 
   const controls = useAnimation();
@@ -28,7 +29,7 @@ const ListItem = ({ name, review, imgUrl, direction }) => {
     onEnter: () => {
       controls.start("open");
     },
-    rootMargin: '0px 250px'
+    rootMargin: "0px 250px",
   });
 
   const cardVariants = {
@@ -41,13 +42,19 @@ const ListItem = ({ name, review, imgUrl, direction }) => {
   };
 
   return (
-    <motion.div transition={{duration: 1}} ref={ref} variants={cardVariants} initial= 'closed' animate={controls} >
+    <motion.div
+      transition={{ duration: 1 }}
+      ref={ref}
+      variants={cardVariants}
+      initial="closed"
+      animate={controls}
+    >
       <Card className={classes.root} raised={true}>
         <Grid container>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} lg={4}>
             <CardMedia className={classes.media} image={imgUrl} />
           </Grid>
-          <Grid item xs={12} md style={{ padding: "10px 20px 10px 20px" }}>
+          <Grid item xs={12} lg style={{ padding: "10px 20px 10px 20px" }}>
             <div style={{ display: "inline-flex" }}>
               <FormatQuoteIcon className={classes.icon} />
               <Typography variant="h5" style={{ marginTop: 10 }}>
@@ -55,6 +62,17 @@ const ListItem = ({ name, review, imgUrl, direction }) => {
               </Typography>
             </div>
             <Typography variant="body1">{review}</Typography>
+            {secondReview && (
+              <>
+                <div style={{ display: "inline-flex" }}>
+                  <FormatQuoteIcon className={classes.icon} />
+                  <Typography variant="h5" style={{ marginTop: 10 }}>
+                    {secondName}
+                  </Typography>
+                </div>
+                <Typography gutterBottom variant="body1">{secondReview}</Typography>
+              </>
+            )}
           </Grid>
         </Grid>
       </Card>
