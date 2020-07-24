@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from 'gatsby'
+import { Link } from "gatsby";
 import {
   Grid,
   Toolbar,
@@ -14,6 +14,7 @@ import {
 import { makeStyles } from "@material-ui/core/styles";
 import MenuIcon from "@material-ui/icons/Menu";
 import Navlink from "./components/NavLink";
+import Favicon from '../../../../images/icons/favicon.png'
 const useStyles = makeStyles((theme) => ({
   root: {
     background: "#00707C",
@@ -26,10 +27,10 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   mainLink: {
-    color: '#fff',
-    textDecoration: 'none',
-    display:'contents'
-  }
+    color: "#fff",
+    textDecoration: "none",
+    display: "contents",
+  },
 }));
 
 const Header = () => {
@@ -53,14 +54,14 @@ const Header = () => {
   };
 
   return (
-    <AppBar position='sticky' style={{ backgroundColor: "var(--simple-blue)" }}>
+    <AppBar position="sticky" style={{ backgroundColor: "var(--simple-blue)" }}>
       <Toolbar>
         <Grid container>
           <Grid item xs>
             <Box height="100%" display="flex">
               <Link className={classes.mainLink} to="#home">
                 <Typography style={{ alignSelf: "center" }} variant="h5">
-                  Simple Soul
+                  SIMPLE S<span><img src={Favicon} height='18px' /></span>UL
                 </Typography>
               </Link>
             </Box>
@@ -69,7 +70,7 @@ const Header = () => {
             <Grid item xs>
               <div className={classes.main}>
                 {links.map((link, i) => (
-                  <Navlink key={i} color='#fff' main link={link.link}>
+                  <Navlink key={i} color="#fff" main link={link.link}>
                     {link.text}
                   </Navlink>
                 ))}
@@ -96,7 +97,9 @@ const Header = () => {
             >
               {links.map((link, i) => (
                 <MenuItem key={i * -1}>
-                  <Navlink key={i} color={'#000'} link={link.link}>{link.text}</Navlink>
+                  <Navlink key={i} color={"#000"} link={link.link}>
+                    {link.text}
+                  </Navlink>
                 </MenuItem>
               ))}
             </Menu>
