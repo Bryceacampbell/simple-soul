@@ -21,7 +21,9 @@ const reviews = [
     {
         id: 3,
         name: 'JoLynn',
-        review: 'From the moment we walked in it was such a wonderful experience. The process was painless and easy and so informative. I couldn’t believe that she was able to give us so much information about our health and so quickly. She didn’t just tell us what we were lacking but she was able to tell us how to fix the problem with just making some minor changes to our food and habits. I am grateful I got to have this experience and have told all my grandkids, great grandkids, and great great grandkids to have this done. I was so excited to come see Heather. I loved how she told us that deep in our hearts we probably already know what our bodies need or what we need to change. I also loved that she has such a holistic approach to helping people feel better. So much in this world is fixed with this pill or that. I loved that her recommendations were all things I could do with eating differently or changing my surroundings. I also loved that even though I had some food restrictions she said that doesn’t mean that you can never eat those foods again it just means to eat them more sparingly and to eat different foods more often. Since my meeting with her I seldom wake up with a gut ache (which I had been most days) and I am sleeping much better. I highly recommend seeing Heather. She is amazing!',
+        review: 'From the moment we walked in it was such a wonderful experience. The process was painless and easy and so informative. I couldn’t believe that she was able to give us so much information about our health and so quickly. She didn’t just tell us what we were lacking but she was able to tell us how to fix the problem with just making some minor changes to our food and habits. I am grateful I got to have this experience and have told all my grandkids, great grandkids, and great great grandkids to have this done. I was so excited to come see Heather. I loved how she told us that deep in our hearts we probably already know what our bodies need or what we need to change. I also loved that she has such a holistic approach to helping people feel better. So much in this world is fixed with this pill or that.',
+        secondName: 'Nancy',
+        secondReview: 'I loved that her recommendations were all things I could do with eating differently or changing my surroundings. I also loved that even though I had some food restrictions she said that doesn’t mean that you can never eat those foods again it just means to eat them more sparingly and to eat different foods more often. Since my meeting with her I seldom wake up with a gut ache (which I had been most days) and I am sleeping much better. I highly recommend seeing Heather. She is amazing!',
         imgUrl: 'https://scontent-lax3-1.xx.fbcdn.net/v/t1.15752-9/114757568_308759047201232_5932699593549822145_n.jpg?_nc_cat=101&_nc_sid=b96e70&_nc_ohc=6aUeSHmPR98AX_ym-e-&_nc_ht=scontent-lax3-1.xx&oh=fb274c25f652426af0004b689cc37fba&oe=5F3B03D0',
         animationDir: 'right'
     },
@@ -33,7 +35,7 @@ const List = () => {
         <Grid container spacing={4}>
             {reviews.map(review => (
                 <Grid item xs={12} key={review.id}>
-                    <TestimonialListItem direction={review.animationDir} name={review.name} review={review.review} imgUrl={review.imgUrl} />
+                    <TestimonialListItem secondName={review.secondName} secondReview={review.secondReview} direction={review.animationDir} name={review.name} review={review.review} imgUrl={review.imgUrl} />
                 </Grid>
             ))}
         </Grid>

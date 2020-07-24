@@ -8,7 +8,7 @@ const useStyles = makeStyles(() => ({
     padding: 20,
   },
   button: {
-    background: "#00707C",
+    background: "var(--simple-blue)",
     color: "#fff",
     float: "right",
     marginRight: 20,
@@ -27,7 +27,7 @@ const Home = () => {
             variant="h4"
             gutterBottom
             style={{
-              color: "#00707C",
+              color: "var(--simple-blue)",
             }}
           >
             Simple Soul
