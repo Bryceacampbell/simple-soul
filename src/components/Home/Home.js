@@ -33,13 +33,17 @@ const Home = () => {
             Simple Soul
           </Typography>
           <Typography variant="h6" gutterBottom>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia.
+            Founded on the principles of Holistic Medicine we look at the mind, body and soul. 
+            Taking us back to our roots in keeping life simple. When the body is well balanced 
+            with proper nutrition, adequate exercise as well as rest, quality sleep and wholesome 
+            engagement for the mind the soul is happy. Looking at nourishing all systems to better 
+            optimize your health!!
+          </Typography>
+          
+          <Typography variant="h6">
+            We are each so uniquely different. What works for one definitely doesn’t works for us all. 
+            Diving deep in your specific journey with your health we take a view at all different angles. 
+            Looking to identify key components to help improve your body’s ability to perform properly.
           </Typography>
         </Grid>
         <Grid item xs={12} md={6}>

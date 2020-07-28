@@ -53,16 +53,30 @@ const Process = () => {
               color: "var(--simple-blue)",
             }}
           >
-            Our Process
+            How we scan
           </Typography>
           <Typography variant="h6" gutterBottom>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia.
+            After setting up an appointment you can plan on your on about and hour and fifteen minutes the day 
+            of your scan. There is no special prep needed. We use the bulb of your hair. Unaffected by shampoos 
+            or hair dye, or other outside environmental factors. Small tweezers are used to grab 3-4 hair bulbs, 
+            that’s it!! Bulbs are placed on the scanner and we receive your report back on the computer in roughly 
+            12-15min. From there we carefully go through your report analyzing all the info. Three very specific 
+            pages are given to us first. Your immune system, gut health and cardiovascular system. Each page is 
+            detailed with key nutrients needed to properly function each of those systems. As well as looking over 
+            any frequencies or environmental issues that could be causing the system to not perform its best. From 
+            there we look deeper into specific vitamins, minerals, fatty acids, antioxidants as well as good 
+            additives that could be affecting you. At the end the report compiles with priority how you can best 
+            optimizes your health. It tells us exactly where the body is lacking the most and what foods will help 
+            to bring those deficiencies up. It will also guide us to what foods you should avoid as well as food 
+            sensitivities as over time they create imbalances in our system.
+          </Typography>
+          <Typography variant="h6" gutterBottom>
+          Your guided with a 90 protocol on how to eat specifically for you body!
+          </Typography>
+          <Typography variant="h6" gutterBottom>
+          The goal is to attack those areas lacking the most nutritionally to help them carry out there specific 
+          function better. We rescan in 90 days and see if better balanced has been achieved in all areas of the 
+          mind, body and soul.
           </Typography>
         </Grid>
         <Grid
@@ -72,14 +86,14 @@ const Process = () => {
           style={{ display: "flex", justifyContent: "center" }}
         >
           <div ref={ref}>
-                <motion.img
-                  variants={imgVariants}
-                  initial="closed"
-                  animate={controls}
-                  src={piechart}
-                  alt="Epigenetic Indicators Chart"
-                  width="350"
-                />
+            <motion.img
+              variants={imgVariants}
+              initial="closed"
+              animate={controls}
+              src={piechart}
+              alt="Epigenetic Indicators Chart"
+              width="350"
+            />
           </div>
         </Grid>
       </Grid>
