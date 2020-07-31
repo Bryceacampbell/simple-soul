@@ -1,10 +1,19 @@
 import React from "react";
-import { Grid, Typography, Container } from "@material-ui/core";
+import {
+  Grid,
+  Typography,
+  Container,
+  List,
+  ListItem,
+  ListItemText,
+  ListItemIcon,
+} from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Steps from "./components/Steps";
 import piechart from "../../images/piechart.jpg";
 import { motion, useAnimation } from "framer-motion";
 import useInView from "react-cool-inview";
+import { AddCircle } from "@material-ui/icons";
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -37,7 +46,7 @@ const Process = () => {
   const { ref, inView } = useInView({
     onEnter: startAnimation,
     unobserveOnEnter: true,
-    rootMargin: '-200px -20px'
+    rootMargin: "-200px -20px",
   });
 
   const classes = useStyles();
@@ -55,9 +64,16 @@ const Process = () => {
           >
             How we scan
           </Typography>
-          <Typography variant="h6" gutterBottom>
-            After setting up an appointment you can plan on your on about and hour and fifteen minutes the day 
-            of your scan. There is no special prep needed. We use the bulb of your hair. Unaffected by shampoos 
+          {/* 
+          Takes 1hr 15min on day of appointment
+          Bulb of your hair
+           */}
+          <Typography paragraph gutterBottom>
+            We use small tweezers to grab 3-4 hair bulbs, which are then placed on
+            our scanner. Your report is sent back in roughly 12-15 minutes.
+            Then, we thoroughly analyze all the information in the report and
+            develop a 90 day personalized health optimization plan.
+            {/* We use the bulb of your hair. Unaffected by shampoos 
             or hair dye, or other outside environmental factors. Small tweezers are used to grab 3-4 hair bulbs, 
             that’s it!! Bulbs are placed on the scanner and we receive your report back on the computer in roughly 
             12-15min. From there we carefully go through your report analyzing all the info. Three very specific 
@@ -68,15 +84,36 @@ const Process = () => {
             additives that could be affecting you. At the end the report compiles with priority how you can best 
             optimizes your health. It tells us exactly where the body is lacking the most and what foods will help 
             to bring those deficiencies up. It will also guide us to what foods you should avoid as well as food 
-            sensitivities as over time they create imbalances in our system.
+            sensitivities as over time they create imbalances in our system. */}
           </Typography>
-          <Typography variant="h6" gutterBottom>
-          Your guided with a 90 protocol on how to eat specifically for you body!
+          <Typography paragraph>
+            Simple Soul specializes in the first 3 pages of the report which
+            gives us specific information on:
           </Typography>
-          <Typography variant="h6" gutterBottom>
-          The goal is to attack those areas lacking the most nutritionally to help them carry out there specific 
-          function better. We rescan in 90 days and see if better balanced has been achieved in all areas of the 
-          mind, body and soul.
+          <List style={{ listStyleType: "circle" }}>
+            {["Immune System", "Gut Health", "Cardiovascuar System"].map(
+              (item, ind) => (
+                <ListItem>
+                  <ListItemIcon>
+                    <AddCircle style={{color:'var(--simple-blue)'}} />
+                  </ListItemIcon>
+                  <ListItemText
+                    primaryTypographyProps={{
+                      variant: "h6",
+                    }}
+                  >
+                    {item}
+                  </ListItemText>
+                </ListItem>
+              )
+            )}
+          </List>
+          <Typography paragraph gutterBottom>
+            You're guided with a 90 protocol on how to eat specifically for your
+            body!
+          </Typography>
+          <Typography paragraph gutterBottom>
+           We rescan in 90 days and see if a better balance has been achieved in all areas of the mind, body and soul.
           </Typography>
         </Grid>
         <Grid

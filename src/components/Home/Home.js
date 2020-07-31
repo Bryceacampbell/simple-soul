@@ -32,7 +32,7 @@ const Home = () => {
           >
             Simple Soul
           </Typography>
-          <Typography variant="h6" gutterBottom>
+          <Typography paragraph gutterBottom>
             Founded on the principles of Holistic Medicine we look at the mind, body and soul. 
             Taking us back to our roots in keeping life simple. When the body is well balanced 
             with proper nutrition, adequate exercise as well as rest, quality sleep and wholesome 
@@ -40,7 +40,7 @@ const Home = () => {
             optimize your health!!
           </Typography>
           
-          <Typography variant="h6">
+          <Typography paragraph>
             We are each so uniquely different. What works for one definitely doesn’t works for us all. 
             Diving deep in your specific journey with your health we take a view at all different angles. 
             Looking to identify key components to help improve your body’s ability to perform properly.
