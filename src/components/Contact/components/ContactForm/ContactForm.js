@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, Hidden, TextField, Button } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles'
 const ContactForm = () => {
-  const  useStyles  = makeStyles((theme) => ({
+  const useStyles = makeStyles((theme) => ({
     responsive: {
       [theme.breakpoints.up('sm')]: {
         justifyContent: 'flex-start'
@@ -18,6 +18,8 @@ const ContactForm = () => {
   return (
     <Grid item>
       <form method="post" data-netlify="true" data-netlify-honeypot="bot-field" name="contact">
+        <input type="hidden" name="bot-field" />
+        <input type="hidden" name="form-name" value="contact" />
         <Grid justify='center' className={styles.responsive} container>
           <div style={{ display: 'contents' }}>
 
