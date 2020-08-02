@@ -8,7 +8,7 @@ const FormInputs = () => {
   ]
   return (
     <div style={{ display: 'contents' }}>
-      <input  type='hidden' name='form-name' value='contact' />
+      <input type='hidden' name='form-name' value='contact' />
       {inputs.map(li => (
         <TextField
 
@@ -20,7 +20,7 @@ const FormInputs = () => {
         ></TextField>
       ))}
       <div style={{ width: "80%" }}>
-        <Button
+        <Button type='submit'
           style={{
             float: "right",
             backgroundColor: "var(--simple-blue)",
