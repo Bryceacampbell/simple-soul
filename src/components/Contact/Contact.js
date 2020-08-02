@@ -43,7 +43,7 @@ const Contact = () => {
                 }}
                 variant="h4"
               >
-                Ask about our...
+              Ask About Our...
               </Typography>
             </Hidden>
           </Grid>
@@ -55,7 +55,7 @@ const Contact = () => {
               }}
               variant="h4"
             >
-              Ask about our...
+              Ask About Our...
             </Typography>
           </Hidden>
           <InfoSection />
