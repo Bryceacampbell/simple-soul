@@ -5,7 +5,7 @@ const ContactForm = () => {
 
   return (
     <Grid item>
-      <form method="post" data-netlify="true" data-netlify-honeypot="bot-field" name="contact-form">
+      <form method="post" data-netlify="true" data-netlify-honeypot="bot-field" name="contact">
         <Hidden smUp>
         <Grid justify='center' container>
           <FormInputs />
