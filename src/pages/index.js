@@ -9,9 +9,11 @@ import Testimonial from '../components/Testimonial/Testimonial';
 import Gallery from '../components/Gallery/Gallery';
 import GalleryBanner from '../components/GalleryBanner/GalleryBanner'
 import Contact from '../components/Contact/Contact'
+import NASM from '../components/NASM-Logo/NASM'
 const index = () => {
 
     return(
+
         <Layout>
             <Home />
             <HomeBanner />

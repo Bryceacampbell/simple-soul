@@ -4,7 +4,7 @@ import Wave from "../SvgIcons/Wave/Wave";
 const GalleryBanner = () => {
   return (
     <Banner id="contact">
-      <Wave width="500px" color="#fff" />
+      <Wave width="100%" color="#fff" />
     </Banner>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 
-const HusbandWifeIcon = ({ color, width }) => {
+const HusbandWifeIcon = ({ color, width, props }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

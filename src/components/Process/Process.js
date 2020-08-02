@@ -1,16 +1,33 @@
 import React from "react";
-import { Grid, Typography, Container } from "@material-ui/core";
+import {
+  Grid,
+  Typography,
+  Container,
+  List,
+  ListItem,
+  ListItemText,
+  ListItemIcon
+} from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Steps from "./components/Steps";
 import piechart from "../../images/piechart.jpg";
 import { motion, useAnimation } from "framer-motion";
 import useInView from "react-cool-inview";
+import { AddCircle } from "@material-ui/icons";
+import NASM from '../../images/nasm.png'
 
-const useStyles = makeStyles(() => ({
+
+const useStyles = makeStyles((theme) => ({
   root: {
-    padding: 20,
+    padding: 15,
     marginBottom: 40,
+    
   },
+  responsive: {
+    [theme.breakpoints.up('xs')]: {
+      marginTop: '2rem'
+    },
+  }
 }));
 
 const Process = () => {
@@ -37,7 +54,7 @@ const Process = () => {
   const { ref, inView } = useInView({
     onEnter: startAnimation,
     unobserveOnEnter: true,
-    rootMargin: '-200px -20px'
+    rootMargin: "-200px -20px",
   });
 
   const classes = useStyles();
@@ -70,13 +87,34 @@ const Process = () => {
             to bring those deficiencies up. It will also guide us to what foods you should avoid as well as food 
             sensitivities as over time they create imbalances in our system.
           </Typography>
-          <Typography variant="h6" gutterBottom>
-          Your guided with a 90 protocol on how to eat specifically for you body!
+          <Typography paragraph>
+            Simple Soul specializes in the first 3 pages of the report which
+            gives us specific information on:
           </Typography>
-          <Typography variant="h6" gutterBottom>
-          The goal is to attack those areas lacking the most nutritionally to help them carry out there specific 
-          function better. We rescan in 90 days and see if better balanced has been achieved in all areas of the 
-          mind, body and soul.
+          <List style={{ listStyleType: "circle" }}>
+            {["Immune System", "Gut Health", "Cardiovascuar System"].map(
+              (item, ind) => (
+                <ListItem>
+                  <ListItemIcon>
+                    <AddCircle style={{color:'var(--simple-blue)'}} />
+                  </ListItemIcon>
+                  <ListItemText
+                    primaryTypographyProps={{
+                      variant: "h6",
+                    }}
+                  >
+                    {item}
+                  </ListItemText>
+                </ListItem>
+              )
+            )}
+          </List>
+          <Typography paragraph gutterBottom>
+            You're guided with a 90 protocol on how to eat specifically for your
+            body!
+          </Typography>
+          <Typography paragraph gutterBottom>
+           We rescan in 90 days and see if a better balance has been achieved in all areas of the mind, body and soul.
           </Typography>
         </Grid>
         <Grid
@@ -98,6 +136,16 @@ const Process = () => {
         </Grid>
       </Grid>
       <Steps inView={inView} variants={imgVariants} />
+      <Grid style={{padding: '3rem 3rem 0 3rem'}} justify='space-around' container>
+        <Grid  item sm={6}>
+          <Typography style={{color: 'var(--simple-blue)'}} className={classes.responsive} align='center' variant='h4'>
+          New Eden Holistic Practitioner Degree
+          </Typography>
+        </Grid>
+        <Grid  item sm='auto'>
+          <img className={classes.responsive} width='125px' src={NASM} alt="Nasm logo"/>
+        </Grid>
+      </Grid>
     </Container>
   );
 };
