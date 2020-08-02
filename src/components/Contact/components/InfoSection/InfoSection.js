@@ -6,8 +6,8 @@ import HusbandWifeIcon from "../../../SvgIcons/HusbandWife/HusbandWifeIcon";
 
 const InfoSection = () => {
   const infoCards = [
-    { icon: <FamilyIcon width='4rem' color='var(--simple-blue' />, header: "Family Discounts", text: "lorem" },
-    { icon: <HusbandWifeIcon width='4rem' color='var(--simple-blue' />, header: "Couples Discounts", text: "lorem" },
+    { icon: <FamilyIcon width='4rem' color='var(--simple-blue' />, header: "Family Discounts", text: "Simple family. Simple Soul." },
+    { icon: <HusbandWifeIcon width='4rem' color='var(--simple-blue' />, header: "Couples Discounts", text: "Find your Simple Soul with your soulmate." },
   ];
   return (
     <Grid spacing={5} style={{ marginTop: ".5em" }} container justify="center">
