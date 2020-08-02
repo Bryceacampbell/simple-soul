@@ -1,5 +1,5 @@
 import React from 'react'
-import {  TextField, Button } from "@material-ui/core";
+import { TextField, Button } from "@material-ui/core";
 const FormInputs = () => {
   const inputs = [
     'Name',
@@ -7,27 +7,29 @@ const FormInputs = () => {
     'Message'
   ]
   return (
-    <div style={{display: 'contents'}}>
+    <div style={{ display: 'contents' }}>
+      <input  type='hidden' name='form-name' value='contact' />
       {inputs.map(li => (
         <TextField
-        style={{ width: "80%", marginBottom: "1.5em" }}
-        size="medium"
-        name={li}
-        label={li}
-        key={li}
-      ></TextField>
+
+          style={{ width: "80%", marginBottom: "1.5em" }}
+          size="medium"
+          name={li}
+          label={li}
+          key={li}
+        ></TextField>
       ))}
       <div style={{ width: "80%" }}>
-            <Button
-              style={{
-                float: "right",
-                backgroundColor: "var(--simple-blue)",
-                color: "#fff",
-              }}
-            >
-              Send
+        <Button
+          style={{
+            float: "right",
+            backgroundColor: "var(--simple-blue)",
+            color: "#fff",
+          }}
+        >
+          Send
             </Button>
-          </div>
+      </div>
     </div>
   )
 }
