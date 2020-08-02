@@ -9,12 +9,12 @@ const ContactForm = () => {
   return (
     <Grid item>
       <form method="post" data-netlify="true" data-netlify-honeypot="bot-field" name="contact">
+        <input type="hidden" name="bot-field" />
+        <input type='hidden' name='form-name' value='contact' />
         <Hidden smUp>
           <Grid justify='center' container>
             <div style={{ display: 'contents' }}>
-              <input type="hidden" name="bot-field" />
 
-              <input type='hidden' name='form-name' value='contact' />
               {inputs.map(li => (
                 <TextField
 
@@ -42,8 +42,7 @@ const ContactForm = () => {
         </Hidden>
         <Hidden only='xs'>
           <div style={{ display: 'contents' }}>
-            <input type="hidden" name="bot-field" />
-            <input type='hidden' name='form-name' value='contact' />
+
             {inputs.map(li => (
               <TextField
 
