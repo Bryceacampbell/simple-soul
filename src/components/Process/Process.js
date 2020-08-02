@@ -55,7 +55,7 @@ const Process = () => {
           >
             How we scan
           </Typography>
-          <Typography variant="h6" gutterBottom>
+          <Typography variant="paragraph" gutterBottom>
             After setting up an appointment you can plan on your on about and hour and fifteen minutes the day 
             of your scan. There is no special prep needed. We use the bulb of your hair. Unaffected by shampoos 
             or hair dye, or other outside environmental factors. Small tweezers are used to grab 3-4 hair bulbs, 
