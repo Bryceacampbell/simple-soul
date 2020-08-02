@@ -72,20 +72,12 @@ const Process = () => {
           >
             How we scan
           </Typography>
-          <Typography variant="paragraph" gutterBottom>
-            After setting up an appointment you can plan on your on about and hour and fifteen minutes the day 
-            of your scan. There is no special prep needed. We use the bulb of your hair. Unaffected by shampoos 
-            or hair dye, or other outside environmental factors. Small tweezers are used to grab 3-4 hair bulbs, 
-            that’s it!! Bulbs are placed on the scanner and we receive your report back on the computer in roughly 
-            12-15min. From there we carefully go through your report analyzing all the info. Three very specific 
-            pages are given to us first. Your immune system, gut health and cardiovascular system. Each page is 
-            detailed with key nutrients needed to properly function each of those systems. As well as looking over 
-            any frequencies or environmental issues that could be causing the system to not perform its best. From 
-            there we look deeper into specific vitamins, minerals, fatty acids, antioxidants as well as good 
-            additives that could be affecting you. At the end the report compiles with priority how you can best 
-            optimizes your health. It tells us exactly where the body is lacking the most and what foods will help 
-            to bring those deficiencies up. It will also guide us to what foods you should avoid as well as food 
-            sensitivities as over time they create imbalances in our system.
+          <Typography paragraph gutterBottom>
+            We use small tweezers to grab 3-4 hair bulbs, which are then placed on
+            our scanner. Your report is sent back in roughly 12-15 minutes.
+            Then, we thoroughly analyze all the information in the report and
+            develop a 90 day personalized health optimization plan.
+
           </Typography>
           <Typography paragraph>
             Simple Soul specializes in the first 3 pages of the report which
