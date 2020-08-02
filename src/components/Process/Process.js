@@ -6,7 +6,7 @@ import {
   List,
   ListItem,
   ListItemText,
-  ListItemIcon
+  ListItemIcon,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Steps from "./components/Steps";
@@ -14,20 +14,12 @@ import piechart from "../../images/piechart.jpg";
 import { motion, useAnimation } from "framer-motion";
 import useInView from "react-cool-inview";
 import { AddCircle } from "@material-ui/icons";
-import NASM from '../../images/nasm.png'
 
-
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
-    padding: 15,
+    padding: 20,
     marginBottom: 40,
-    
   },
-  responsive: {
-    [theme.breakpoints.up('xs')]: {
-      marginTop: '2rem'
-    },
-  }
 }));
 
 const Process = () => {
@@ -128,16 +120,6 @@ const Process = () => {
         </Grid>
       </Grid>
       <Steps inView={inView} variants={imgVariants} />
-      <Grid style={{padding: '3rem 3rem 0 3rem'}} justify='space-around' container>
-        <Grid  item sm={6}>
-          <Typography style={{color: 'var(--simple-blue)'}} className={classes.responsive} align='center' variant='h4'>
-          New Eden Holistic Practitioner Degree
-          </Typography>
-        </Grid>
-        <Grid  item sm='auto'>
-          <img className={classes.responsive} width='125px' src={NASM} alt="Nasm logo"/>
-        </Grid>
-      </Grid>
     </Container>
   );
 };

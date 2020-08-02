@@ -16,7 +16,7 @@ const useStyles = makeStyles(() => ({
     fontSize: 40,
   },
   media: {
-    height: 530,
+    height: 475,
   },
 }));
 
@@ -57,7 +57,7 @@ const ListItem = ({ name, review, imgUrl, direction, secondReview, secondName })
           <Grid item xs={12} lg style={{ padding: "10px 20px 10px 20px" }}>
             <div style={{ display: "inline-flex" }}>
               <FormatQuoteIcon className={classes.icon} />
-              <Typography gutterBottom variant="h5" style={{ marginTop: 10 }}>
+              <Typography variant="h5" style={{ marginTop: 10 }}>
                 {name}
               </Typography>
             </div>
