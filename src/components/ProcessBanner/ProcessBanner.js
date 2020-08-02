@@ -18,7 +18,7 @@ const ProcessBanner = () => {
     <Banner id="testimonials">
       <Grid item xs="auto">
         <Typography className={classes.headers} variant="h5">
-          Starting at $225
+          Starting at $240
         </Typography>
       </Grid>
       <Grid className={classes.grid} item xs="auto">
