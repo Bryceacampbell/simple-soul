@@ -1,6 +1,7 @@
 import React from "react";
-import { Grid, Hidden, TextField, Button } from "@material-ui/core";
+import { Grid, TextField, Button } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles'
+
 const ContactForm = () => {
   const useStyles = makeStyles((theme) => ({
     responsive: {
@@ -13,8 +14,10 @@ const ContactForm = () => {
   const inputs = [
     'Name',
     'Phone',
+    'Email',
     'Message'
   ]
+
   return (
     <Grid item>
       <form method="post" data-netlify="true" data-netlify-honeypot="bot-field" name="contact">
@@ -22,29 +25,28 @@ const ContactForm = () => {
         <input type="hidden" name="form-name" value="contact" />
         <Grid justify='center' className={styles.responsive} container>
           <div style={{ display: 'contents' }}>
+              {inputs.map(li => (
+                <TextField
 
-            {inputs.map(li => (
-              <TextField
-
-                style={{ width: "80%", marginBottom: "1.5em" }}
-                size="medium"
-                name={li}
-                label={li}
-                key={li}
-                mutliline={li === 'Message'}
-              ></TextField>
-            ))}
-            <div style={{ width: "80%" }}>
-              <Button type='submit'
-                style={{
-                  float: "right",
-                  backgroundColor: "var(--simple-blue)",
-                  color: "#fff",
-                }}
-              >
-                Send
+                  style={{ width: "80%", marginBottom: "1.5em" }}
+                  size="medium"
+                  name={li}
+                  label={li}
+                  key={li}
+                  mutliline={li === 'Message'}
+                ></TextField>
+              ))}
+              <div style={{ width: "80%" }}>
+                <Button type='submit'
+                  style={{
+                    float: "right",
+                    backgroundColor: "var(--simple-blue)",
+                    color: "#fff",
+                  }}
+                >
+                  Send
             </Button>
-            </div>
+              </div>
           </div>
         </Grid>
       </form>
