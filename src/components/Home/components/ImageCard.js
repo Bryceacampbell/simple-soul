@@ -5,16 +5,16 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(() => ({
     root: {
-        maxWidth: '100%',
+        width: '100%',
         borderRadius: 10
     },
     media: {
-        height: 350,
+        height: '100%',
     },
 }));
 
 
-const ImageCard = ({image, title, height}) => {
+const ImageCard = ({ image, title, height }) => {
     const classes = useStyles();
 
     return (
@@ -23,7 +23,7 @@ const ImageCard = ({image, title, height}) => {
                 // className={classes.media}
                 image={image}
                 title={title}
-                style={{height: height}}
+                style={{ height: height }}
             />
         </Card>
     )

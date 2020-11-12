@@ -4,7 +4,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import ImageCard from "./components/ImageCard";
 import EntryImage from '../../images/card-img.jpeg';
 import Heather from '../../images/heather.jpg';
-
+import AboutSection from "./components/AboutSection/AboutSection";
+import Arian from '../../images/arian.jpg'
 const useStyles = makeStyles(() => ({
   root: {
     padding: 20,
@@ -54,37 +55,69 @@ const Home = () => {
         </Grid>
       </Grid>
       <Grid container spacing={4} className={classes.root}>
-        <Grid item xs={12} md={6}>
-          <ImageCard image={Heather} title={"Heather Germaine"} height={500}/>
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <br></br>
+        <Grid item xs={12}>
           <Typography
             variant="h4"
             gutterBottom
             style={{
               color: "var(--simple-blue)",
-            }}
-          >
-            About Me
+            }}>Team Simple Soul</Typography>
+        </Grid>
+        <Grid item xs={12}>
+          <Grid container spacing={2}>
+            <AboutSection img={Heather} title='Heather Germaine'>
+              <br></br>
+              <Typography
+                variant="h4"
+                gutterBottom
+                style={{
+                  color: "var(--simple-blue)",
+                }}
+              >
+                Heather Germaine
           </Typography>
-          <Typography paragraph gutterBottom>
-            Married to my best friend who supports all my crazy health ideas! I am a mom to 4 kids who I
-            love and adore and are a big reason for my passion for Holistic Health. I want to make sure what
-            I feed them is as close to its natural form as possible, I am by no means perfect, they still
-            have junk here and there, but the goal is simple and natural. I believe with my whole heart food
-            really is the best medicine. What we put in our mouths directly effects are overall health
-            including our mind and soul and  our body's ability to adapt to all the stress life throws at us.
+              <Typography paragraph gutterBottom>
+                Married to my best friend who supports all my crazy health ideas! I am a mom to 4 kids who I
+                love and adore and are a big reason for my passion for Holistic Health. I want to make sure what
+                I feed them is as close to its natural form as possible, I am by no means perfect, they still
+                have junk here and there, but the goal is simple and natural. I believe with my whole heart food
+                really is the best medicine. What we put in our mouths directly effects are overall health
+                including our mind and soul and  our body's ability to adapt to all the stress life throws at us.
           </Typography>
 
-          <Typography paragraph gutterBottom>
-            I have been a trainer for a little over 5 years now and love to workout, but my mind has slightly
-            focused over the years to be more mindful of my mental state and becoming more aware of where my
-            energy is being spent. As I have put more focus on the foods that work right for my body, adapted
-            meditation, along with cold ice bath therapy, I have felt more empowered and stronger both physically
-            and mentally! I want to help others achieve a stronger state not just physically but mentally as well.
-            Simple Soul Az a passion for getting back to the basics.
+              <Typography paragraph gutterBottom>
+                I have been a trainer for a little over 5 years now and love to workout, but my mind has slightly
+                focused over the years to be more mindful of my mental state and becoming more aware of where my
+                energy is being spent. As I have put more focus on the foods that work right for my body, adapted
+                meditation, along with cold ice bath therapy, I have felt more empowered and stronger both physically
+                and mentally! I want to help others achieve a stronger state not just physically but mentally as well.
+                Simple Soul Az a passion for getting back to the basics.
           </Typography>
+            </AboutSection>
+          </Grid>
+        </Grid>
+        <Grid item xs={12}>
+          <Grid container spacing={2}>
+            <AboutSection imgRight img={Arian} title='Heather Germaine'>
+              <br></br>
+              <Typography
+                variant="h4"
+                gutterBottom
+                style={{
+                  color: "var(--simple-blue)",
+                }}
+              >
+                Arian
+          </Typography>
+              <Typography paragraph gutterBottom>
+                I was born and raised into health. I had parents and grandparents who invested a lot of time and energy into providing good whole foods for their children as well as a balanced lifestyle that promoted nutrition, physical activity, and mental/emotional well-being. I will forever be grateful for that upbringing!
+          </Typography>
+
+              <Typography paragraph gutterBottom>
+                I have always loved being active and love the endorphins that come with it! Being active has helped me keep up with my always-on-the-move husband and our five children. There was a time when I was feeling pretty awful and ended up doing a lot to fix my hormonal health. After working on my own health and learning more about how much nutrition and lifestyle affect our hormones, I worked for a Bio-Identical Hormone specialist in one of his offices in Scottsdale, Arizona. Since then I have incorporated the things I have learned into my life and the lives of my husband and children. When we are eating healthy foods (the majority of the time), getting enough sleep, living an active lifestyle, and making time to focus on our emotional health, we are all happier and have loads more energy to enjoy life! That way of thinking has been reconfirmed as I have learned about and studied epigenetics (hair analysis). I love helping others feel their best inside and out and feel like this is truly a way to do that!
+          </Typography>
+            </AboutSection>
+          </Grid>
         </Grid>
       </Grid>
     </Container>
