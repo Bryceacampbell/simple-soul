@@ -20,15 +20,23 @@ const HomeBanner = () => {
             variant="h6"
             gutterBottom
           >
-            Schedule an appointment today!
+            Book an appointment today!
               </Typography>
           <Box display="flex" justifyContent="center">
-            <a target='_blank' href='https://square.site/book/2TM3B1F3R9Z9C/simple-soul-gilbert-az' style={{textDecoration: 'none'}}>
+            <a target='_blank' href='https://square.site/book/2TM3B1F3R9Z9C/simple-soul-gilbert-az' style={{ textDecoration: 'none' }}>
+              <Button
+                style={{ color: "white", borderColor: "#ccc", marginRight: 5 }}
+                variant="outlined"
+              >
+                Book With Heather
+                </Button>
+            </a>
+            <a target='_blank' href='https://square.site/book/LDPMM9HFN2MY3/simple-soul-az-2-gilbert-az' style={{ textDecoration: 'none' }}>
               <Button
                 style={{ color: "white", borderColor: "#ccc" }}
                 variant="outlined"
               >
-                Schedule Appointment
+                Book With Arian
                 </Button>
             </a>
           </Box>

@@ -81,7 +81,7 @@ const Home = () => {
                 love and adore and are a big reason for my passion for Holistic Health. I want to make sure what
                 I feed them is as close to its natural form as possible, I am by no means perfect, they still
                 have junk here and there, but the goal is simple and natural. I believe with my whole heart food
-                really is the best medicine. What we put in our mouths directly effects are overall health
+                really is the best medicine. What we put in our mouths directly effects our overall health
                 including our mind and soul and  our body's ability to adapt to all the stress life throws at us.
           </Typography>
 
