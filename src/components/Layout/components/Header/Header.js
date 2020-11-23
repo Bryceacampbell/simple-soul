@@ -54,59 +54,75 @@ const Header = () => {
   };
 
   return (
-    <AppBar position="sticky" style={{ backgroundColor: "var(--simple-blue)" }}>
-      <Toolbar>
-        <Grid container>
-          <Grid item xs>
-            <Box height="100%" display="flex">
-              <Link className={classes.mainLink} to="#home">
-                <Typography style={{ alignSelf: "center" }} variant="h5">
-                  SIMPLE S<span><img src={Favicon} height='18px' /></span>UL
-                </Typography>
-              </Link>
-            </Box>
-          </Grid>
-          <Hidden only="xs">
+    <>
+      {/* <AppBar position="sticky">
+        <Toolbar>
+          <Grid container>
             <Grid item xs>
-              <div className={classes.main}>
-                {links.map((link, i) => (
-                  <Navlink key={i} color="#fff" main link={link.link}>
-                    {link.text}
-                  </Navlink>
-                ))}
-              </div>
+              <Typography>Visit <a href="www.cellcore.com">www.cellcore.com</a> and use our code EIHN0LSF</Typography>
             </Grid>
-          </Hidden>
-          <Hidden smUp>
-            <IconButton
-              aria-controls="responsive-menu"
-              style={{ float: "right" }}
-              onClick={handleClick}
-            >
-              <MenuIcon
-                style={{ color: "white" }}
-                aria-controls="responsive-menu"
-              />
-            </IconButton>
-
-            <Menu
-              anchorEl={anchorEl}
-              open={Boolean(anchorEl)}
-              onClose={handleClose}
-              id="responsive-menu"
-            >
-              {links.map((link, i) => (
-                <MenuItem key={i * -1}>
-                  <Navlink key={i} color={"#000"} link={link.link}>
-                    {link.text}
-                  </Navlink>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Hidden>
+          </Grid>
+        </Toolbar>
+      </AppBar> */}
+      <AppBar position="sticky" style={{ backgroundColor: "var(--simple-blue)" }}>
+        <Grid container style={{ backgroundColor: "#beddda", color: "#000000", textAlign: "center" }}>
+          <Grid item xs={12}>
+            <Typography>Visit <a href="www.cellcore.com" style={{color: "var(--simple-blue)"}} target="_blank">www.cellcore.com</a> and use our code EIHN0LSF</Typography>
+          </Grid>
         </Grid>
-      </Toolbar>
-    </AppBar>
+        <Toolbar>
+          <Grid container>
+            <Grid item xs>
+              <Box height="100%" display="flex">
+                <Link className={classes.mainLink} to="#home">
+                  <Typography style={{ alignSelf: "center" }} variant="h5">
+                    SIMPLE S<span><img src={Favicon} height='18px' /></span>UL
+                </Typography>
+                </Link>
+              </Box>
+            </Grid>
+            <Hidden only="xs">
+              <Grid item xs>
+                <div className={classes.main}>
+                  {links.map((link, i) => (
+                    <Navlink key={i} color="#fff" main link={link.link}>
+                      {link.text}
+                    </Navlink>
+                  ))}
+                </div>
+              </Grid>
+            </Hidden>
+            <Hidden smUp>
+              <IconButton
+                aria-controls="responsive-menu"
+                style={{ float: "right" }}
+                onClick={handleClick}
+              >
+                <MenuIcon
+                  style={{ color: "white" }}
+                  aria-controls="responsive-menu"
+                />
+              </IconButton>
+
+              <Menu
+                anchorEl={anchorEl}
+                open={Boolean(anchorEl)}
+                onClose={handleClose}
+                id="responsive-menu"
+              >
+                {links.map((link, i) => (
+                  <MenuItem key={i * -1}>
+                    <Navlink key={i} color={"#000"} link={link.link}>
+                      {link.text}
+                    </Navlink>
+                  </MenuItem>
+                ))}
+              </Menu>
+            </Hidden>
+          </Grid>
+        </Toolbar>
+      </AppBar>
+    </>
   );
 };
 
