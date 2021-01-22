@@ -84,7 +84,7 @@ const Home = () => {
                 love and adore and are a big reason for my passion for Holistic Health. I want to make sure what
                 I feed them is as close to its natural form as possible, I am by no means perfect, they still
                 have junk here and there, but the goal is simple and natural. I believe with my whole heart food
-                really is the best medicine. What we put in our mouths directly effects our0 overall health
+                really is the best medicine. What we put in our mouths directly effects our overall health
                 including our mind and soul and  our body's ability to adapt to all the stress life throws at us.
           </Typography>
 
@@ -113,11 +113,21 @@ const Home = () => {
                 Arian
           </Typography>
               <Typography paragraph gutterBottom>
-                I was born and raised into health. I had parents and grandparents who invested a lot of time and energy into providing good whole foods for their children as well as a balanced lifestyle that promoted nutrition, physical activity, and mental/emotional well-being. I will forever be grateful for that upbringing!
+                I was born and raised into health. I had parents and grandparents who invested a lot of time and energy 
+                into providing good whole foods for their children as well as a balanced lifestyle that promoted nutrition, 
+                physical activity, and mental/emotional well-being. I will forever be grateful for that upbringing!
           </Typography>
 
               <Typography paragraph gutterBottom>
-                I have always loved being active and love the endorphins that come with it! Being active has helped me keep up with my always-on-the-move husband and our five children. There was a time when I was feeling pretty awful and ended up doing a lot to fix my hormonal health. After working on my own health and learning more about how much nutrition and lifestyle affect our hormones, I worked for a Bio-Identical Hormone specialist in one of his offices in Scottsdale, Arizona. Since then I have incorporated the things I have learned into my life and the lives of my husband and children. When we are eating healthy foods (the majority of the time), getting enough sleep, living an active lifestyle, and making time to focus on our emotional health, we are all happier and have loads more energy to enjoy life! That way of thinking has been reconfirmed as I have learned about and studied epigenetics (hair analysis). I love helping others feel their best inside and out and feel like this is truly a way to do that!
+                I have always loved being active and love the endorphins that come with it! Being active has helped me keep up 
+                with my always-on-the-move husband and our five children. There was a time when I was feeling pretty awful and 
+                ended up doing a lot to fix my hormonal health. After working on my own health and learning more about how much 
+                nutrition and lifestyle affect our hormones, I worked for a Bio-Identical Hormone specialist in one of his offices 
+                in Scottsdale, Arizona. Since then I have incorporated the things I have learned into my life and the lives of my 
+                husband and children. When we are eating healthy foods (the majority of the time), getting enough sleep, living an 
+                active lifestyle, and making time to focus on our emotional health, we are all happier and have loads more energy to 
+                enjoy life! That way of thinking has been reconfirmed as I have learned about and studied epigenetics (hair analysis). 
+                I love helping others feel their best inside and out and feel like this is truly a way to do that!
           </Typography>
             </AboutSection>
           </Grid>
