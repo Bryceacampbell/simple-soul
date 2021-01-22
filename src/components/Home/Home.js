@@ -6,7 +6,7 @@ import EntryImage from '../../images/card-img.jpeg';
 import Heather from '../../images/heather.jpg';
 import AboutSection from "./components/AboutSection/AboutSection";
 import Arian from '../../images/arian.jpg';
-import Rachel from '../../images/rachel.jpg';
+import Rachel from '../../images/Rachel.jpg';
 
 
 const useStyles = makeStyles(() => ({
