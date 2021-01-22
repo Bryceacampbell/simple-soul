@@ -20,7 +20,7 @@ const ImageCard = ({ image, title, height }) => {
     return (
         <Card className={classes.root} raised={true}>
             <CardMedia
-                // className={classes.media}
+                className={classes.media}
                 image={image}
                 title={title}
                 style={{ height: height }}

@@ -39,6 +39,14 @@ const HomeBanner = () => {
                 Book With Arian
                 </Button>
             </a>
+            <a target='_blank' href='https://square.site/book/5KJCPAZA587D1/simplesoulut-ld-draper-ut' style={{ textDecoration: 'none' }}>
+              <Button
+                style={{ color: "white", borderColor: "#ccc" }}
+                variant="outlined"
+              >
+                Book With Rachel
+                </Button>
+            </a>
           </Box>
         </Grid>
       </Container>
