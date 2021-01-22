@@ -8,6 +8,7 @@ import AboutSection from "./components/AboutSection/AboutSection";
 import Arian from '../../images/arian.jpg';
 import Rachel from '../../images/rachel.jpg';
 
+
 const useStyles = makeStyles(() => ({
   root: {
     padding: 20,
