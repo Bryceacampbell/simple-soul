@@ -6,7 +6,6 @@ import BottomSVG from "./components/BottomSVG/BottomSVG";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    height: 150,
     width: "100%",
     background: "var(--simple-blue)",
     justifyContent: 'center'
