@@ -67,7 +67,7 @@ const Header = () => {
       <AppBar position="sticky" style={{ backgroundColor: "var(--simple-blue)" }}>
         <Grid container style={{ backgroundColor: "#beddda", color: "#000000", textAlign: "center" }}>
           <Grid item xs={12}>
-            <Typography variant='h6'>Visit <a href="https://www.cellcore.com" target="_blank" style={{color: "var(--simple-blue)", fontWeight: 'bold'}}>www.cellcore.com</a> and use our code <strong>EIHN0LSF</strong></Typography>
+            <Typography variant='h6'>Visit <a href="https://www.cellcore.com/pages/register-customer" target="_blank" style={{color: "var(--simple-blue)", fontWeight: 'bold'}}>www.cellcore.com</a> and use our code <strong>EIHN0LSF</strong></Typography>
           </Grid>
         </Grid>
         <Toolbar>
