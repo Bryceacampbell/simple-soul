@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import {Link} from 'gatsby'
+import { Link } from 'gatsby'
 
 const NavLink = ({ link, children, color, main }) => {
   const useStyles = makeStyles({
