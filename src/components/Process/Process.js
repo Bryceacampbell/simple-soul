@@ -84,7 +84,7 @@ const Process = () => {
           <List style={{ listStyleType: "circle" }}>
             {["Immune System", "Gut Health", "Cardiovascuar System"].map(
               (item, ind) => (
-                <ListItem>
+                <ListItem key={item}>
                   <ListItemIcon>
                     <AddCircle style={{color:'var(--simple-blue)'}} />
                   </ListItemIcon>

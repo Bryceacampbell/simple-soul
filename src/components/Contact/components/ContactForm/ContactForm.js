@@ -27,13 +27,12 @@ const ContactForm = () => {
           <div style={{ display: 'contents' }}>
               {inputs.map(li => (
                 <TextField
-
                   style={{ width: "80%", marginBottom: "1.5em" }}
                   size="medium"
                   name={li}
                   label={li}
                   key={li}
-                  mutliline={li === 'Message'}
+                  mutliline={[li === 'Message'].toString()}
                 ></TextField>
               ))}
               <div style={{ width: "80%" }}>

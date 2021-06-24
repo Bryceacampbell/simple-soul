@@ -32,9 +32,9 @@ const Team = () => {
             }}>Team Simple Soul</Typography>
         </Grid>
         {teamData.map((member, i) => (
-          <Grid item xs={12}>
+          <Grid item xs={12} key={member.name}>
             <Grid container spacing={2}>
-              <AboutSection imgRight={i % 2 == 0 ? false : true} img={member.img} title={member.name}>
+              <AboutSection imgRight={i % 2 === 0 ? false : true} img={member.img} title={member.name}>
                 <br></br>
                 <Typography
                   variant="h4"

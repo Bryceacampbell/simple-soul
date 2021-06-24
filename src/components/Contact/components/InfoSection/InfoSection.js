@@ -11,8 +11,8 @@ const InfoSection = () => {
   ];
   return (
     <Grid spacing={5} style={{ marginTop: ".5em" }} container justify="center">
-      {infoCards.map(card => (
-        <Grid item xs={12}>
+      {infoCards.map((card, i) => (
+        <Grid item xs={12} key={`card-${i}`}>
           <InfoCard icon={card.icon} header={card.header} text={card.text} />
           </Grid>
       ))}

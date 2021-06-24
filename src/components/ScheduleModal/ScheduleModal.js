@@ -77,7 +77,7 @@ export default function ScheduleModal() {
               </Grid>
               <List className={classes.list}>
                 {teamData.map((member) => (
-                  <a target='_blank' href={member.link} style={{ textDecoration: 'none', color: 'inherit' }}>
+                  <a target='_blank' rel="noreferrer" href={member.link} style={{ textDecoration: 'none', color: 'inherit' }} key={`${member.name}-link`}>
                     <ListItem button key={member.name}>
                       <ListItemAvatar>
                         <Avatar alt={member.name} src={member.img} className={classes.avatar} />

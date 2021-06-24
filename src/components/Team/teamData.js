@@ -2,6 +2,8 @@ import Heather from '../../images/heather.jpg';
 import Arian from '../../images/arian.jpg';
 import Rachel from '../../images/Rachel.jpg';
 import Graycee from '../../images/graycee.jpg';
+import Charlie from '../../images/charlie.jpg';
+import Kasse from '../../images/kasse.jpeg';
 
 const teamData = [
   {
@@ -72,6 +74,41 @@ const teamData = [
     by overcoming illness, inconsistent eating patterns and mental challenges by adding quality foods into their diet 
     and making small, simple changes. The Epigenetic Hair Analysis gives an individualized report of nutritional needs 
     so that changes can be made based on what you are lacking and need more of!`
+  },
+  {
+    name: 'Charlie Hatch',
+    img: Charlie,
+    location: 'Mesa, AZ',
+    link: 'https://squareup.com/appointments/book/wzmbwb4m4lies4/LDHYT3PZ7RVZB/start',
+    p1: `I’m Charlie Hatch. I love spending time with my husband and our 5 kids, 3 sons-in-law and 10 grandkids. 
+    I’ve never met a beach I didn’t like and I’m not embarrassed to say that my family has been to Disneyland several 
+    dozen times. And I believe that good health results from positivity, effort and consistency.`,
+    p2: `My Interest in creating and maintaining a healthy lifestyle was magnified in 2019 when I was diagnosed with thyroid cancer. 
+    Although I has a long-standing interest in nutrition and environment as it related to overall health, for much of my life 
+    I depended on good genetics. My interest shifted into overdrive when my health was threatened. Once my treatment was complete, 
+    I bean to research additional way that I could enhance my health to promote longevity and vigor. I was frustrated with the 
+    differing opinions on which and how many supplements I should take. I was curious about why I had developed food 
+    sensitivities and whether they were hindering my health. What did my body really need? For me, hair analysis was 
+    an empowering tool to help me feel proactive and informed about what my body was asking for. I felt like I had been 
+    given a roadmap to help me on my health journey. The whole process really resonated with me – so much so that I decided 
+    to become certified to do hair analysis. I’ve learned so much and I’m excited to become an Integrated Health Practitioner. 
+    By nature, I like serving and delighted that I can help others discover their own roadmaps to better health!`
+  },
+  {
+    name: 'Kasse Morris',
+    img: Kasse,
+    location: 'Texas',
+    link: 'https://simple-soul-tx.square.site',
+    p1: `Health has always interested me, but it wasn’t until I experienced my own health issues—gut problems, food allergies, 
+    and food sensitivities—that I took a deep dive into learning how to heal my body through food and other holistic methods. 
+    These practices healed my gut, many of my food allergies and sensitivities, depression, and brain fog. We live in a world that 
+    claims to have many silver bullets to living a healthy and better life. I have learned that our bodies are unique and there is 
+    no silver bullet for healing, but we can use food as medicine to heal our bodies from the many ailments we face.`,
+    p2: `I am a certified holistic health coach and love to help people learn about the power of food, supplements, movement, and 
+    mindfulness. I believe that what we eat, drink, and put into and onto our bodies affects how we feel and how our body functions. 
+    I am passionate about helping my clients learn how to nourish their bodies, souls, and minds. The Epigenetic Hair Analysis is a 
+    tool I use to help my clients see tangible evidence of what is going on inside their bodies. Together, we will put a plan in place 
+    to help you transform your life.`
   }
 ];
 export default teamData;

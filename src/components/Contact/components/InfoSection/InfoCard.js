@@ -4,11 +4,9 @@ import {
   CardMedia,
   CardContent,
   Typography,
-  Button,
   Grid,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import FamilyIcon from "../../../SvgIcons/Family/FamilyIcon";
 
 const InfoCard = ({icon, text, header}) => {
   const useStyles = makeStyles({

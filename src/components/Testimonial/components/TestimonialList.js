@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Hidden } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import TestimonialListItem from './TestimonialListItem';
 import review1 from '../../../images/review1.jpg';
 import review2 from '../../../images/review2.jpg';

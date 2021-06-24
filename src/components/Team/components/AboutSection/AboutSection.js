@@ -1,7 +1,6 @@
 import React from 'react'
-import { Grid, Typography } from '@material-ui/core'
+import { Grid, makeStyles } from '@material-ui/core';
 import ImageCard from '../../../Home/components/ImageCard'
-import { makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles(theme => ({
     one: {

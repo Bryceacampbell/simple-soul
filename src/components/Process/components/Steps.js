@@ -51,7 +51,7 @@ const Steps = ({ inView }) => {
             >
               {steps.map((step, i) => {
                 return (
-                  <Grid item xs>
+                  <Grid item xs key={step.name}>
                     <Step
                       name={step.name}
                       icon={step.icon}
@@ -67,7 +67,7 @@ const Steps = ({ inView }) => {
       <Hidden mdUp>
         <Grid container direction="row" justify="space-around">
           {steps.map((step, i) => (
-            <Grid item xs>
+            <Grid item xs key={`${step.name}-mobile`}>
               <MobileSteps icon={step.icon} name={step.name} />
             </Grid>
           ))}
