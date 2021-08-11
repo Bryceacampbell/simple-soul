@@ -29,7 +29,7 @@ const teamData = [
     img: Arian,
     location: 'Gilbert, AZ',
     link: 'https://square.site/book/LDPMM9HFN2MY3/simple-soul-az-2-gilbert-az',
-    p1: `I was born and raised into health. I had parents and grandparents who invested a lot of time and energy
+    p1: `I was born and raised in health. I had parents and grandparents who invested a lot of time and energy
     into providing good whole foods for their children as well as a balanced lifestyle that promoted nutrition,
     physical activity, and mental/emotional well-being. I will forever be grateful for that upbringing!`,
     p2: `I have always loved being active and love the endorphins that come with it! Being active has helped me keep up
@@ -82,11 +82,11 @@ const teamData = [
     link: 'https://squareup.com/appointments/book/wzmbwb4m4lies4/LDHYT3PZ7RVZB/start',
     p1: `I’m Charlie Hatch. I love spending time with my husband and our 5 kids, 3 sons-in-law and 10 grandkids. 
     I’ve never met a beach I didn’t like and I’m not embarrassed to say that my family has been to Disneyland several 
-    dozen times. And I believe that good health results from positivity, effort and consistency.`,
-    p2: `My Interest in creating and maintaining a healthy lifestyle was magnified in 2019 when I was diagnosed with thyroid cancer. 
-    Although I has a long-standing interest in nutrition and environment as it related to overall health, for much of my life 
+    dozen times. And I believe that good health results from positivity, effort, and consistency.`,
+    p2: `My interest in creating and maintaining a healthy lifestyle was magnified in 2019 when I was diagnosed with thyroid cancer. 
+    Although I had a long-standing interest in nutrition and environment as it related to overall health, for much of my life 
     I depended on good genetics. My interest shifted into overdrive when my health was threatened. Once my treatment was complete, 
-    I bean to research additional way that I could enhance my health to promote longevity and vigor. I was frustrated with the 
+    I bean to research additional ways that I could enhance my health to promote longevity and vigor. I was frustrated with the 
     differing opinions on which and how many supplements I should take. I was curious about why I had developed food 
     sensitivities and whether they were hindering my health. What did my body really need? For me, hair analysis was 
     an empowering tool to help me feel proactive and informed about what my body was asking for. I felt like I had been 
@@ -99,8 +99,8 @@ const teamData = [
     img: Kasse,
     location: 'Texas',
     link: 'https://simple-soul-tx.square.site',
-    p1: `Health has always interested me, but it wasn’t until I experienced my own health issues—gut problems, food allergies, 
-    and food sensitivities—that I took a deep dive into learning how to heal my body through food and other holistic methods. 
+    p1: `Health has always interested me, but it wasn’t until I experienced my own health issues — gut problems, food allergies, 
+    and food sensitivities — that I took a deep dive into learning how to heal my body through food and other holistic methods. 
     These practices healed my gut, many of my food allergies and sensitivities, depression, and brain fog. We live in a world that 
     claims to have many silver bullets to living a healthy and better life. I have learned that our bodies are unique and there is 
     no silver bullet for healing, but we can use food as medicine to heal our bodies from the many ailments we face.`,
