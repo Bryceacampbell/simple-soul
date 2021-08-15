@@ -34,6 +34,11 @@ const useStyles = makeStyles((theme) => ({
   },
   listItemText: {
     paddingLeft: '1rem'
+  }, 
+  button: {
+    position: "fixed", 
+    bottom: 7, 
+    right: 7
   }
 }));
 
@@ -52,7 +57,8 @@ export default function ScheduleModal() {
   return (
     <div>
       <Button
-        style={{ color: "white", borderColor: "#ccc" }}
+        className={classes.button}
+        style={{ backgroundColor: "#000", color: "white", borderColor: "#fff", zIndex: 5 }}
         variant="outlined"
         onClick={handleOpen}>
         Schedule Now

@@ -3,7 +3,7 @@ import Arian from '../../images/arian.jpg';
 import Rachel from '../../images/Rachel.jpg';
 import Graycee from '../../images/graycee.jpg';
 import Charlie from '../../images/charlie.jpg';
-import Kasse from '../../images/kasse.jpeg';
+import Kasse from '../../images/kasse.jpg';
 
 const teamData = [
   {

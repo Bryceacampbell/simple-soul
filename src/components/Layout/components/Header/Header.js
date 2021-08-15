@@ -65,14 +65,14 @@ const Header = () => {
         </Toolbar>
       </AppBar> */}
       <AppBar position="sticky" style={{ backgroundColor: "var(--simple-blue)" }}>
-        <Grid container style={{ backgroundColor: "#beddda", color: "#000000", textAlign: "center" }}>
+        {/* <Grid container style={{ backgroundColor: "#beddda", color: "#000000", textAlign: "center" }}>
           <Grid item xs={12} md={6}>
             <Typography>Visit <a href="https://www.cellcore.com/pages/register-customer" target="_blank" rel="noreferrer" style={{ color: "var(--simple-blue)", fontWeight: 'bold' }}>cellcore.com</a> and use our code <strong>EIHN0LSF</strong></Typography>
           </Grid>
           <Grid item xs={12} md={6}>
             <Typography><a href="https://go.globalhealingcenter.com/c/2733531/528221/5534" target="_blank" rel="noreferrer" style={{ color: "var(--simple-blue)" }}>10% off Oxy-Powder</a></Typography>
           </Grid>
-        </Grid>
+        </Grid> */}
         <Toolbar>
           <Grid container>
             <Grid item xs>

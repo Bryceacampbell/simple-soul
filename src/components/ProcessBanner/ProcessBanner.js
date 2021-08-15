@@ -18,7 +18,12 @@ const ProcessBanner = () => {
     <Banner id="testimonials">
       <Grid item xs="auto">
         <Typography className={classes.headers} variant="h5">
-          Starting at $225
+          Starting at $195 - $250
+        </Typography>
+      </Grid>
+      <Grid item xs="auto">
+        <Typography className={classes.headers} variant="h6">
+          <i>* Price dependent on practitioner experience</i>
         </Typography>
       </Grid>
       <Grid className={classes.grid} item xs="auto">
