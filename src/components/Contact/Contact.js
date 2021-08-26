@@ -7,7 +7,7 @@ const Contact = () => {
     <Container style={{ marginBottom: 80 }}>
       <Grid style={{ padding: "20px" }} container spacing={2}>
         <Grid item sm={6}>
-          <Grid container justify="center">
+          <Grid container justifyContent="center">
             <Hidden smUp>
               <Typography
                 style={{
@@ -34,7 +34,7 @@ const Contact = () => {
           <ContactForm />
         </Grid>
         <Grid item sm={6}>
-          <Grid container justify="center">
+          <Grid container justifyContent="center">
             <Hidden smUp>
               <Typography
                 style={{

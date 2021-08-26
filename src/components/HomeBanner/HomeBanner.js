@@ -7,7 +7,7 @@ const HomeBanner = () => {
   return (
     <Banner>
       <Container>
-        {/* <Grid display='flex' direction='column' alignItems='center' justify='center' style={{ height: '100%' }} container>
+        {/* <Grid display='flex' direction='column' alignItems='center' justifyContent='center' style={{ height: '100%' }} container>
           <Typography
             style={{ color: "white" }}
             align="center"
@@ -28,7 +28,7 @@ const HomeBanner = () => {
           </Grid>
         </Grid> */}
 
-        <Grid container display='flex' direction='column' alignItems='center' justify='center' style={{ backgroundColor: "transparent", color: "#fff", textAlign: "center" }}>
+        <Grid container display='flex' direction='column' alignItems='center' justifyContent='center' style={{ backgroundColor: "transparent", color: "#fff", textAlign: "center" }}>
           <Grid item xs={12} md={6}>
             <Typography>Visit <a href="https://www.cellcore.com/pages/register-customer" target="_blank" rel="noreferrer" style={{ color: "#000", fontWeight: 'bold' }}>cellcore.com</a> and use our code <strong>EIHN0LSF</strong></Typography>
           </Grid>
