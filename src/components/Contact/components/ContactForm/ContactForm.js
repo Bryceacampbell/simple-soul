@@ -23,7 +23,7 @@ const ContactForm = () => {
       <form method="post" data-netlify="true" data-netlify-honeypot="bot-field" name="contact">
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="contact" />
-        <Grid justify='center' className={styles.responsive} container>
+        <Grid justifyContent='center' className={styles.responsive} container>
           <div style={{ display: 'contents' }}>
               {inputs.map(li => (
                 <TextField

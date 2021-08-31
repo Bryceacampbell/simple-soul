@@ -23,7 +23,7 @@ const Banner = ({ children, id }) => {
         </Grid>
 
         <Grid item xs={12}>
-          <Grid id={id} className={classes.root} container alignItems="center" justify="center" direction='column' >
+          <Grid id={id} className={classes.root} container alignItems="center" justifyContent="center" direction='column' >
             {children}
           </Grid>
         </Grid>

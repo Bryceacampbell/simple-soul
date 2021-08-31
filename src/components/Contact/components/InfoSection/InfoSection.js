@@ -10,7 +10,7 @@ const InfoSection = () => {
     { icon: <HusbandWifeIcon width='4rem' color='var(--simple-blue' />, header: "Couples Discounts", text: "Find your Simple Soul with your soulmate and get $25 off each scan." },
   ];
   return (
-    <Grid spacing={5} style={{ marginTop: ".5em" }} container justify="center">
+    <Grid spacing={5} style={{ marginTop: ".5em" }} container justifyContent="center" id="info">
       {infoCards.map((card, i) => (
         <Grid item xs={12} key={`card-${i}`}>
           <InfoCard icon={card.icon} header={card.header} text={card.text} />

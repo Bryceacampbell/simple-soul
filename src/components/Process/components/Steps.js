@@ -46,7 +46,7 @@ const Steps = ({ inView }) => {
               container
               spacing={2}
               direction="row"
-              justify="space-around"
+              justifyContent="space-around"
               style={{ textAlign: "center" }}
             >
               {steps.map((step, i) => {
@@ -65,7 +65,7 @@ const Steps = ({ inView }) => {
         </AnimatePresence>
       </Hidden>
       <Hidden mdUp>
-        <Grid container direction="row" justify="space-around">
+        <Grid container direction="row" justifyContent="space-around">
           {steps.map((step, i) => (
             <Grid item xs key={`${step.name}-mobile`}>
               <MobileSteps icon={step.icon} name={step.name} />

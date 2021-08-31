@@ -4,6 +4,7 @@ import Rachel from '../../images/Rachel.jpg';
 import Graycee from '../../images/graycee.jpg';
 import Charlie from '../../images/charlie.jpg';
 import Kasse from '../../images/kasse.jpg';
+import Katie from '../../images/katie.jpeg';
 
 const teamData = [
   {
@@ -109,6 +110,27 @@ const teamData = [
     I am passionate about helping my clients learn how to nourish their bodies, souls, and minds. The Epigenetic Hair Analysis is a 
     tool I use to help my clients see tangible evidence of what is going on inside their bodies. Together, we will put a plan in place 
     to help you transform your life.`
+  }, 
+  {
+    name: 'Katie Decker', 
+    img: Katie, 
+    location: 'St. George, UT', 
+    link: 'https://my-business-108883.square.site', 
+    p1: `I'm Katie, I live and play in sunny St. George with my husband and
+    three girls. I graduated with a bachelor's degree in Human Development
+    from The University of Utah in 2004 where I became a D1 All American
+    high jumper. I studied human anatomy & physiology along with
+    kinesiology and as an athlete have always been fascinated with the
+    body and how it functions.`, 
+    p2: `In 2008 I my began my journey to heal my
+    thyroid from hashimotos. I spent 2014-2019 dedicated to the healing
+    and recovery of those whose loved ones are suffering from addiction at
+    the substance abuse treatment center I own and operate with my amazing
+    husband. One of my many passions is leading self- love/reconnection
+    yoga retreats guiding others who are looking to live more fully into
+    their lives. I am a Certified Yoga Life Coach and 200 hr. Registered
+    Yoga Teacher. My holistic approach to healing the mind, body, and
+    spirit has led me to epigenetic hair analysis.`
   }
 ];
 export default teamData;

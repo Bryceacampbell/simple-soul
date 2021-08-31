@@ -1,9 +1,10 @@
 import React from "react";
 import Banner from "../Banner/Banner";
-import { Typography, Grid, Box } from "@material-ui/core";
+import { Typography, Grid, Box, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import HusbandWifeIcon from "../SvgIcons/HusbandWife/HusbandWifeIcon";
 import FamilyIcon from "../SvgIcons/Family/FamilyIcon";
+import {Link} from 'gatsby'
 const ProcessBanner = () => {
   const useStyles = makeStyles({
     headers: {
@@ -11,6 +12,12 @@ const ProcessBanner = () => {
     },
     grid: {
       marginTop: ".5rem",
+    },
+    link: {
+      textDecoration: "none",
+      color: "white",
+      fontFamily: 'Montserrat', 
+      fontSize: ".75rem"
     },
   });
   const classes = useStyles();
@@ -49,6 +56,17 @@ const ProcessBanner = () => {
             </Typography>
           </Box>
         </Grid>
+      </Grid>
+      <Grid item xs="auto">
+        <Button style={{
+                  backgroundColor: "black",
+                  color: "#fff",
+                  marginTop: ".5rem"
+                }}>
+          <Link to="#info" className={classes.link}>
+            View Discount Details
+          </Link>
+        </Button>
       </Grid>
     </Banner>
   );

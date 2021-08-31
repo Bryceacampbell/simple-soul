@@ -126,7 +126,7 @@ const Process = () => {
         </Grid>
       </Grid>
       <Steps inView={inView} variants={imgVariants} />
-      <Grid style={{padding: '3rem 3rem 0 3rem'}} justify='space-around' container>
+      <Grid style={{padding: '3rem 3rem 0 3rem'}} justifyContent='space-around' container>
         <Grid  item sm={6}>
           <Typography style={{color: 'var(--simple-blue)'}} className={classes.responsive} align='center' variant='h4'>
           New Eden Holistic Practitioner Degree

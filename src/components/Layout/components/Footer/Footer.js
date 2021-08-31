@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div style={{backgroundColor: 'var(--simple-blue)'}}>
       <Container>
-        <Grid justify="center" container>
+        <Grid justifyContent="center" container>
           <Grid style={{display: 'contents'}} item>
             <img style={{margin:'.5em auto .5em auto'}} height="35px" src={Favicon} alt="Simple Soul Logo" />
           </Grid>
