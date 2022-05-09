@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/simple-soul',
   siteMetadata: {
     title: `Simple Soul`,
     description: `Simple Soul - Holistic, Personal, Simple`,
